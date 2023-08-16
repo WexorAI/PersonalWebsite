@@ -137,11 +137,12 @@ function Login() {
         className=" col-lg-9 col-md-7 col-sm-12 "
       >
         <Image
-          src="/ABOUTIMAGE.png"
+          src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/ABOUTIMAGE.png"
           alt="Login Image"
-          width={1000}
-          height={900}
+          width={800}
+          height={800}
         />
+
       </motion.div>
     </div>
   );

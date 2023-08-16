@@ -1,10 +1,29 @@
+import styles from '../app/landingPage/landingPage.css'
+import Chatbot from "./ChatBot/page";
+import About from "./landingPage/About/page";
+import Banner from "./landingPage/Banner/page";
+import Footer from "./landingPage/Footer/page";
+import Header from "./landingPage/Header/page";
+import Services from "./landingPage/Services/page";
+import Work from "./landingPage/Work/page";
+// import bg from "../../public/leadspace.png";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        chat bot
+      <div
+      style={{backgroundImage: `url(https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/leadspace.png)`,}}
+      className="bg-site bg-no-repeat
+        bg-cover overflow-hidden"
+      >
+        <Header />
+        <Banner />
+        {/* <NavBar /> */}
+        <About />
+        <Services />
+        <Work />
+        <Chatbot />
+        <Footer />
+        <div className="h-[flex]"></div>
       </div>
-    </main>
   );
 }

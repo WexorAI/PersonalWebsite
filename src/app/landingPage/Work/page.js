@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 function Work() {
   return (
-    <section className="section" id="work">
+    <section className="section flex items-center "  id="work">
       <div className="container max-auto">
-        <div className=" flex flex-col lg:flex-row gap-x-10 ">
+        <div className=" flex flex-col lg:flex-row gap-x-10 " >
           <motion.div
             variants={fadeIn("right", 0.5)}
             initial="hidden"
@@ -32,7 +32,7 @@ function Work() {
               <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300 "></div>
               {/* img */}
               <Image
-              src="/work.jpg"
+              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/work.jpg"
               alt="Login Image"
               width={800}
               height={750}
@@ -60,7 +60,7 @@ function Work() {
               <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300 "></div>
               {/* img */}
               <Image
-              src="/work.jpg"
+              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/work.jpg"
               alt="Login Image"
               width={800}
               height={750}
@@ -81,7 +81,7 @@ function Work() {
               <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300 "></div>
               {/* img */}
               <Image
-              src="/work.jpg"
+              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/work.jpgrk.jpg"
               alt="Login Image"
               width={800}
               height={750}

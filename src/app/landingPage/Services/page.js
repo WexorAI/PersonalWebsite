@@ -30,7 +30,6 @@ const services = [
       "Our AI-powered chatbots provide real-time assistance and reduce support team workload, while AI automation streamlines workflows for increased productivity.",
     link: "lern more",
   },
-
 ];
 function Services() {
   return (
@@ -47,7 +46,10 @@ function Services() {
           >
             <h2 className="h2 text-accent mb-6">What We Offer:</h2>
             <h3 className="h3 max-w-[455px] mb-16  ">
-              We are passionate about crafting innovative solutions that leverage cutting-edge technologies to bring your ideas to life. Our team of experts specializes in a range of services to meet your digital needs.
+              We are passionate about crafting innovative solutions that
+              leverage cutting-edge technologies to bring your ideas to life.
+              Our team of experts specializes in a range of services to meet
+              your digital needs.
             </h3>
             {/* <Link href={"/login"}>
               <button className="btn btn-sm"> see our web</button>
@@ -79,15 +81,12 @@ function Services() {
                       </p>
                     </div>
                     <div className="flex flex-col flex-1 items-end">
-                      <a
-                        href="/"
-                        className="btn w-9 h-9 mb-[42px] flex justify-center items-center "
-                      >
+                      <div className="btn w-9 h-9 mb-[42px] flex justify-center items-center">
                         <BsArrowUpRight />
-                        <a className="text-gradient text-sm" href="/">
+                        <a href="/" className="text-gradient text-sm">
                           {link}
                         </a>
-                      </a>
+                      </div>
                     </div>
                   </div>
                 );

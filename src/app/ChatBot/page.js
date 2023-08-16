@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./ChatBot.css"; // Make sure to adjust the path to your CSS file
+import { Button } from "antd";
 
 function Chatbot() {
   const [botMessage, setBotMessage] = useState("Loading...");
@@ -124,7 +125,7 @@ function Chatbot() {
               alignItems: "center",
             }}
           >
-            <img src="/chatIcon.png" alt="Login Image" width={50} height={50} />
+            <img src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/chatIcon.png" alt="Login Image" width={50} height={50} />
           </div>
           <div className="text-center fw-bold mx-3 mb-0">
             Our bot answers instantly
@@ -162,13 +163,13 @@ function Chatbot() {
                 </div>
 
                 <div className="chat-bar-icons">
-                  <div
-                    className="btn btn-primary text-white"
+                  <Button
+                    className="btn  text-white"
                     style={{ color: "#333" }}
                     onClick={handleSendButtonClick}
                   >
                     sent
-                  </div>
+                  </Button>
                 </div>
               </div>
 
@@ -180,7 +181,7 @@ function Chatbot() {
         </div>
       </div>
       <img
-        src="/chatIcon.png"
+        src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/chatIcon.png"
         alt="Login Image"
         width={90}
         height={90}
