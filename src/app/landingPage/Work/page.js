@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 function Work() {
   return (
-    <section className="section" id="work">
+    <section className="section flex items-center "  id="work">
       <div className="container max-auto">
-        <div className=" flex flex-col lg:flex-row gap-x-10 ">
+        <div className=" flex flex-col lg:flex-row gap-x-10 " >
           <motion.div
             variants={fadeIn("right", 0.5)}
             initial="hidden"

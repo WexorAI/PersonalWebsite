@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./ChatBot.css"; // Make sure to adjust the path to your CSS file
+import { Button } from "antd";
 
 function Chatbot() {
   const [botMessage, setBotMessage] = useState("Loading...");
@@ -162,13 +163,13 @@ function Chatbot() {
                 </div>
 
                 <div className="chat-bar-icons">
-                  <div
-                    className="btn btn-primary text-white"
+                  <Button
+                    className="btn  text-white"
                     style={{ color: "#333" }}
                     onClick={handleSendButtonClick}
                   >
                     sent
-                  </div>
+                  </Button>
                 </div>
               </div>
 

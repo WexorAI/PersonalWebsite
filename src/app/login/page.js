@@ -139,9 +139,10 @@ function Login() {
         <Image
           src="/ABOUTIMAGE.png"
           alt="Login Image"
-          width={1000}
-          height={900}
+          width={800}
+          height={800}
         />
+
       </motion.div>
     </div>
   );

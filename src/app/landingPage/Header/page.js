@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -6,13 +7,16 @@ function Header() {
     <div className=" py-8">
       <div className=" container mx-auto">
         <div className="flex justify-between items-center">
-          <a href="/landingPage">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/5659/5659696.png"
-              className="w-25"
-              alt="NOIMAGE"
+          {/* <a href="/landingPage"> */}
+
+            <Image
+              src="/wexorLogo.png"
+              alt="Login Image"
+              width={90}
+              height={90}
+              style={{ borderRadius: '25%' }}
             />
-          </a>
+          {/* </a> */}
           {/* <Link href={"/login"}>
             <button className="btn btn-sm ">work with us</button>
           </Link> */}
