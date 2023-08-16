@@ -23,7 +23,7 @@ function About() {
             className="hidden lg:flex   flex-1  bg-contain bg-no-repeat h-[640px] max-w-[320px] lg:max-w-[482px] mix-blend-lighten bg-top "
           >
             <Image
-              src="/chatingwomen.png"
+              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/chatingwomen.png"
               alt="Login Image"
               width={800}
               height={750}
