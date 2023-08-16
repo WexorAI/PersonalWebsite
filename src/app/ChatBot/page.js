@@ -125,7 +125,7 @@ function Chatbot() {
               alignItems: "center",
             }}
           >
-            <img src="/chatIcon.png" alt="Login Image" width={50} height={50} />
+            <img src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/chatIcon.png" alt="Login Image" width={50} height={50} />
           </div>
           <div className="text-center fw-bold mx-3 mb-0">
             Our bot answers instantly
@@ -181,7 +181,7 @@ function Chatbot() {
         </div>
       </div>
       <img
-        src="/chatIcon.png"
+        src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/chatIcon.png"
         alt="Login Image"
         width={90}
         height={90}

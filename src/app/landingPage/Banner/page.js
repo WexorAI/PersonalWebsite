@@ -109,7 +109,7 @@ function Banner() {
             style={{ borderRadius: "600px", overflow: "hidden" }}
           >
             <Image
-              src="/BANNERIMAGE.png"
+              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/BANNERIMAGE.png"
               alt="Login Image"
               width={800}
               height={750}

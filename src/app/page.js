@@ -6,12 +6,12 @@ import Footer from "./landingPage/Footer/page";
 import Header from "./landingPage/Header/page";
 import Services from "./landingPage/Services/page";
 import Work from "./landingPage/Work/page";
-import bg from "../../public/leadspace.png";
+// import bg from "../../public/leadspace.png";
 
 export default function Home() {
   return (
       <div
-      style={{backgroundImage: `url(${bg.src})`,}}
+      style={{backgroundImage: `url(https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/leadspace.png)`,}}
       className="bg-site bg-no-repeat
         bg-cover overflow-hidden"
       >
