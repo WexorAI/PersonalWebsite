@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
-import ReactTooltip from "react-tooltip";
+// import ReactTooltip from "react-tooltip";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/app/components/Variants";
