@@ -1,4 +1,4 @@
-import styles from '../app/landingPage/landingPage.css'
+import styles from "../app/landingPage/landingPage.css";
 import Chatbot from "./ChatBot/page";
 import About from "./landingPage/About/page";
 import Banner from "./landingPage/Banner/page";
@@ -10,20 +10,20 @@ import Work from "./landingPage/Work/page";
 
 export default function Home() {
   return (
-      <div
-      style={{backgroundImage: `url(https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/leadspace.png)`,}}
+    <div
+      style={{ backgroundColor: "#090447" }}
       className="bg-site bg-no-repeat
         bg-cover overflow-hidden"
-      >
-        <Header />
-        <Banner />
-        {/* <NavBar /> */}
-        <About />
-        <Services />
-        <Work />
-        <Chatbot />
-        <Footer />
-        <div className="h-[flex]"></div>
-      </div>
+    >
+      <Header />
+      <Banner />
+      {/* <NavBar /> */}
+      <About />
+      <Services />
+      <Work />
+      <Chatbot />
+      <Footer />
+      <div className="h-[flex]"></div>
+    </div>
   );
 }
