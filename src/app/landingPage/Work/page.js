@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { fadeIn } from '@/app/components/Variants';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Work() {
   return (
@@ -25,7 +26,7 @@ function Work() {
               </h2>
               <p className=" max-w-sm mb-16">
               Empower your business with our AI-powered chatbots for 24/7 support and customer satisfaction...... </p>
-              <button className=" btn btn-sm">see Our website</button>
+              <Link  href="/register" ><button className=" btn btn-sm">see Our website</button></Link>
             </div>
             {/* image one */}
             <div className=" group relative overflow-hidden border-2 border-white/50 rounded-xl">

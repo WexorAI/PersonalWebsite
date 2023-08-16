@@ -12,6 +12,8 @@ export default function Home() {
   return (
       <div
       style={{backgroundImage: `url(https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/leadspace.png)`,}}
+      // style={{ backgroundColor: "#090447" }}
+
       className="bg-site bg-no-repeat
         bg-cover overflow-hidden"
       >

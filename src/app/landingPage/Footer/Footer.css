@@ -4,7 +4,7 @@ ul {
 }
 .footer-section {
   background: #0f055a;
-  position: relative;
+  /* position: relative; */
 }
 .footer-cta {
   border-bottom: 1px solid #042c76;
@@ -100,7 +100,7 @@ ul {
 }
 .footer-widget ul li {
   display: inline-block;
-  float: left;
+  float: left; 
   width: 50%;
   margin-bottom: 12px;
 }

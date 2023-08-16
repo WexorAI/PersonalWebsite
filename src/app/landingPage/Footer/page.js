@@ -1,8 +1,9 @@
 import React from "react";
-import { FaDribbble, FaGithub, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import bg from "../../../../public/send.png";
 import styles from "./Footer.css";
 import Link from "next/link";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -45,11 +46,14 @@ function Footer() {
               <div className="col-xl-4 col-lg-4 mb-50">
                 <div className="footer-widget">
                   <div className="footer-logo">
-                    <Link href="/">
-                      <h2 className="h2 text">WexorAI</h2>
-                      <h3 className="h3">The AI Automation </h3>
-                      <h4>Company</h4>
-                    </Link>
+                    <Image
+                      src="wexorwhiteimg.jpg"
+                      alt="Login Image"
+                      width={800}
+                      height={750}
+                      style={{ borderRadius: '10px' }}
+
+                    />
                   </div>
                   <div className="footer-text">
                     <p>
@@ -62,14 +66,14 @@ function Footer() {
                   <div className="footer-social-icon">
                     <span>Follow us</span>
                     <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
-                      <a href="/youtube">
-                        <FaYoutube />
+                      <a href="/Linkedin">
+                        <FaLinkedin />
                       </a>
-                      <a href="/github">
-                        <FaGithub />
+                      <a href="/instagram">
+                        <FaInstagram />
                       </a>
-                      <a href="/dribble">
-                        <FaDribbble />
+                      <a href="/facebook">
+                        <FaFacebook />
                       </a>
                     </div>{" "}
                   </div>
@@ -116,9 +120,7 @@ function Footer() {
                   <div className="subscribe-form">
                     <form action="#">
                       <input type="text" placeholder="Email Address" />
-                      <button>
-                        send
-                      </button>
+                      <button>send</button>
                     </form>
                   </div>
                 </div>

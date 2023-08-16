@@ -80,14 +80,6 @@ function Services() {
                         {description}
                       </p>
                     </div>
-                    <div className="flex flex-col flex-1 items-end">
-                      <div className="btn w-9 h-9 mb-[42px] flex justify-center items-center">
-                        <BsArrowUpRight />
-                        <a href="/" className="text-gradient text-sm">
-                          {link}
-                        </a>
-                      </div>
-                    </div>
                   </div>
                 );
               })}
