@@ -74,8 +74,9 @@ function Banner() {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <Link href="/login">
+              <Link href="/AboutUs">
                 <button className="btn btn-lg">contact Us</button>
+                {/* contact Us */}
               </Link>
               <a href="/socialMedia" className="text-gradient btn-link">
                 Try It
