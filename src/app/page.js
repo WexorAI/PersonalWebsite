@@ -10,8 +10,9 @@ import Work from "./landingPage/Work/page";
 
 export default function Home() {
   return (
-    <div
+      <div
       style={{ backgroundColor: "#090447" }}
+
       className="bg-site bg-no-repeat
         bg-cover overflow-hidden"
     >

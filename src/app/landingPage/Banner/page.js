@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
+import {  FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 // import ReactTooltip from "react-tooltip";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -74,8 +74,9 @@ function Banner() {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <Link href="/login">
+              <Link href="/AboutUs">
                 <button className="btn btn-lg">contact Us</button>
+                {/* contact Us */}
               </Link>
               <a href="/socialMedia" className="text-gradient btn-link">
                 Try It
@@ -89,8 +90,8 @@ function Banner() {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="/github">
-                <FaGithub />
+                 <a href="/Linkedin">
+                <FaLinkedin /> 
               </a>
               <a href="/instagram">
                 <FaInstagram />
