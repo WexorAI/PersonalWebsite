@@ -4,7 +4,7 @@ import {  FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 // import ReactTooltip from "react-tooltip";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/app/components/Variants";
+import { fadeIn } from "../../../app/components/Variants";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -74,7 +74,7 @@ function Banner() {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <Link href="/AboutUs">
+              <Link href="/contactus">
                 <button className="btn btn-lg">contact Us</button>
                 {/* contact Us */}
               </Link>

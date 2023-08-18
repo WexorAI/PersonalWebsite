@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./AboutUs.css";
+import styles from "./ContactUs.css";
 import {
   FaArrowLeft,
   FaEnvelope,
@@ -8,10 +8,15 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 
-function AboutUs() {
+function ContactUs() {
   return (
     <div className="aboutus">
       <div className="containers">
+        <Link href="/">
+          <div className="button mr-5">
+            <input type="button" value="Go Back🡨" />
+          </div>
+        </Link>
         <div className="contents">
           <div className="left-side">
             <div className="address details">
@@ -55,17 +60,11 @@ function AboutUs() {
               <div className="input-box message-box">
                 <input type="text" placeholder="Enter your message" />
               </div>
-<div>
+              <div>
                 <div className="button mr-5 ">
                   <input type="button" value="Send Now" />
                 </div>
-                <Link href="/">
-                  <div className="btn btn-danger  p-2 ml-5">
-                    Go Back
-                    <FaArrowLeft className="icon" value="home" />
-                  </div>
-                </Link>
-</div>
+              </div>
             </form>
           </div>
         </div>
@@ -74,4 +73,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default ContactUs;
