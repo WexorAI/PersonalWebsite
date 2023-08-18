@@ -1,4 +1,4 @@
-import styles from '../app/landingPage/landingPage.css'
+import styles from "../app/landingPage/landingPage.css";
 import Chatbot from "./ChatBot/page";
 import About from "./landingPage/About/page";
 import Banner from "./landingPage/Banner/page";
@@ -15,16 +15,16 @@ export default function Home() {
 
       className="bg-site bg-no-repeat
         bg-cover overflow-hidden"
-      >
-        <Header />
-        <Banner />
-        {/* <NavBar /> */}
-        <About />
-        <Services />
-        <Work />
-        <Chatbot />
-        <Footer />
-        <div className="h-[flex]"></div>
-      </div>
+    >
+      <Header />
+      <Banner />
+      {/* <NavBar /> */}
+      <About />
+      <Services />
+      <Work />
+      <Chatbot />
+      <Footer />
+      <div className="h-[flex]"></div>
+    </div>
   );
 }
