@@ -11,7 +11,7 @@ import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import axios from "axios";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/app/components/Variants";
+import { fadeIn } from "../../app/components/Variants";
 import Image from "next/image";
 
 const formItemLayout = {

@@ -7,7 +7,7 @@ import Link from "next/link";
 import styles from "./login.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/app/components/Variants";
+import { fadeIn } from "../../app/components/Variants";
 
 function Login() {
   const onfinishHandler = async (values) => {
