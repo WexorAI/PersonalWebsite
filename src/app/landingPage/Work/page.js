@@ -1,7 +1,8 @@
 "use client"
 import React from 'react'
 import { motion } from "framer-motion";
-import { fadeIn } from '@/app/components/Variants';
+import { fadeIn } from "../../../app/components/Variants";
+
 import Image from 'next/image';
 import Link from 'next/link';
 

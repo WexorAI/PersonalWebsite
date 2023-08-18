@@ -3,7 +3,9 @@ import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/app/components/Variants";
+// import { fadeIn } from "@/app/components/Variants";
+import { fadeIn } from "../../../app/components/Variants";
+
 import Image from "next/image";
 
 function About() {
