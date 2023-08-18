@@ -61,14 +61,9 @@ function AboutUs() {
                 <input type="text" placeholder="Enter your message" />
               </div>
               <div>
-                <div className="button  mr-5 ">
+                <div className="button mr-5 ">
                   <input type="button" value="Send Now" />
                 </div>
-                {/* <Link href="/" >
-                  <div className="button mr-5" >
-                    <input type="button" value="Go Back 🡨" />
-                  </div>
-                </Link> */}
               </div>
             </form>
           </div>
