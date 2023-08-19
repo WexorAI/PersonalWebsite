@@ -95,7 +95,7 @@ function Chatbot() {
     };
 
     axios
-      .post("http://13.48.193.249/chat", requestData)
+      .post("https://chatbot.wexorai.com/chat", requestData)
       .then(function (response) {
         const botResponse = response.data.response;
         setBotMessage(botResponse);
