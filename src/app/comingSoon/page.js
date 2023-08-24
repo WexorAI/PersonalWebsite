@@ -5,9 +5,9 @@ import Image from "next/image";
 function comingSoon() {
   return (
     <div className="soon">
-      <div class="container">
-        <div class="wrapper">
-          <div class="content">
+      <div class="containerr">
+        <div class="wrapperr">
+          <div class="contentt">
             <h1>We're Coming Soon</h1>
             <p>
               Perfect and awesome to present your future product or service.{" "}
