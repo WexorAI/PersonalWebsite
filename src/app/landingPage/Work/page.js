@@ -27,7 +27,7 @@ function Work() {
               </h2>
               <p className=" max-w-sm mb-16">
               Empower your business with our AI-powered chatbots for 24/7 support and customer satisfaction...... </p>
-              <Link  href="/register" ><button className=" btn btn-sm">see Our website</button></Link>
+              <Link  href="/comingSoon" ><button className=" btn btn-sm">see Our website</button></Link>
             </div>
             {/* image one */}
             <div className=" group relative overflow-hidden border-2 border-white/50 rounded-xl">

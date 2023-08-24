@@ -10,7 +10,9 @@ function Header() {
           {/* <a href="/landingPage"> */}
 
             <Image
+              // src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/wexorLogo.png"
               src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/wexorLogo.png"
+
               alt="Login Image"
               width={90}
               height={90}
