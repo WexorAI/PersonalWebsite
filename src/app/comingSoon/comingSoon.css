@@ -8,11 +8,12 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
+  background: #060556;
 }
 
-img {
+/* img {
   max-width: 100%;
-}
+} */
 
 .containerr {
   height: 100vh;
@@ -30,7 +31,7 @@ img {
   background: linear-gradient(
     -55deg,
     transparent 25%,
-    #0b0c10 25%,
+    #0b0e10 25%,
     #16181e 75%,
     transparent 75%,
     transparent 100%
@@ -58,8 +59,8 @@ img {
   font-size: 1.1rem;
   color: white;
 }
-
-.contentt a {
+/* button  */
+/* .contentt a {
   color: white;
   display: inline-block;
   padding: 2.1% 4%;
@@ -97,7 +98,37 @@ img {
   border-width: 1px;
   border-style: solid;
   transition: 0.2s ease-in-out;
-}
+} */
+a.button2 {
+    display: inline-block;
+    padding: 0.5em 3em;
+    border: 0.16em solid #ffffff;
+    margin: 0 0.9em 0.9em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    transition: all 0.15s;
+  }
+  a.button2:hover {
+    color: #dddddd;
+    border-color: #dddddd;
+  }
+  a.button2:active {
+    color: #bbbbbb;
+    border-color: #bbbbbb;
+  }
+  @media all and (max-width: 30em) {
+    a.button2 {
+      display: block;
+      margin: 0.4em auto;
+    }
+  }  
+
+/* btn end */
 .rocket {
   width: 250px;
   position: absolute;

@@ -14,12 +14,18 @@ function comingSoon() {
               <br />
               Hooking audience attention is all in the opener.
             </p>
-            <a href="/contactus" class="btn1 btn">
+            {/* <a href="/contactus" class="btn1 btn">
               Contactus
             </a>
             <a href="/" class="btn2 btn">
               Back to Home
-            </a>
+            </a> */}
+                 <a href="/" class="button2">
+                  🡨 BACK to home
+                  </a>
+                  <a href="/contactus" class="button2">
+                    CONTACT US
+                  </a>{" "}
             <Image
               src="rocket.png"
               alt="Login Image"
