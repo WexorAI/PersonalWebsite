@@ -12,11 +12,11 @@ function ContactUs() {
   return (
     <div className="aboutus">
       <div className="containers">
-        <Link href="/">
+        {/* <Link href="/">
           <div className="button mr-5">
             <input type="button" value="Go Back🡨" />
           </div>
-        </Link>
+        </Link> */}
         <div className="contents">
           <div className="left-side">
             <div className="address details">
@@ -45,7 +45,7 @@ function ContactUs() {
             </div>
           </div>
           <div className="right-side">
-            <div className="topic-text">Send us a message</div>
+            <div className="topic-text"> SENT US A MESSAGE </div>
             <p>
               Feel free to reach out with any questions or inquiries you may
               have. I'm here to assist you and provide the help you need.
@@ -61,8 +61,16 @@ function ContactUs() {
                 <input type="text" placeholder="Enter your message" />
               </div>
               <div>
-                <div className="button mr-5 ">
+                {/* <div className="button mr-5 ">
                   <input type="button" value="Send Now" />
+                </div> */}
+                <div>
+                  <a href="/" class="button2">
+                  🡨 BACK to home
+                  </a>
+                  <a href="something" class="button2">
+                    sent
+                  </a>{" "}
                 </div>
               </div>
             </form>

@@ -66,7 +66,7 @@ function Footer() {
                   <div className="footer-social-icon">
                     <span>Follow us</span>
                     <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
-                      <a href="/Linkedin">
+                      <a href="https://www.linkedin.com/company/wexorai/">
                         <FaLinkedin />
                       </a>
                       <a href="/instagram">
