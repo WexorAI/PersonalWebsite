@@ -14,10 +14,10 @@ function comingSoon() {
               <br />
               Hooking audience attention is all in the opener.
             </p>
-            <a href="/contactus" class="btn1">
+            <a href="/contactus" class="btn1 btn">
               Contactus
             </a>
-            <a href="/" class="btn2">
+            <a href="/" class="btn2 btn">
               Back to Home
             </a>
             <Image
