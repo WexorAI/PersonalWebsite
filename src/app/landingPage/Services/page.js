@@ -4,6 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 // import { fadeIn } from "@/app/components/Variants";
 import { fadeIn } from "../../../app/components/Variants";
+import styles from "./Services.css";
 
 import Link from "next/link";
 
@@ -37,22 +38,28 @@ function Services() {
   return (
     <section className="section" id="services">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row ">
+        <div className="side flex flex-col lg:flex-row ">
           {/* text&image*/}
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:bg-services lg:bg-botton bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+            className=" flex-1 lg:bg-services lg:bg-botton bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+            style={{margin: "auto"}}
           >
-            <h2 className="h2 text-accent mb-6">What We Offer:</h2>
-            <h3 className="h3 max-w-[455px] mb-16  ">
+            <span className="h2 mb-6">What We Offer:</span>
+            <h1>Our Servicess</h1>
+            <hr/>
+            <p className=" max-w-[455px] mb-16  ">
               We are passionate about crafting innovative solutions that
               leverage cutting-edge technologies to bring your ideas to life.
               Our team of experts specializes in a range of services to meet
               your digital needs.
-            </h3>
+            </p>
+            <span className="border-b border-white/20 flex"/>
+
+            {/* <a href="#">download app</a> */}
             {/* <Link href={"/login"}>
               <button className="btn btn-sm"> see our web</button>
             </Link>{" "} */}
@@ -78,7 +85,7 @@ function Services() {
                       <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6  ">
                         {name}
                       </h4>
-                      <p className=" font-secondary leading-tight  ">
+                      <p className=" font-secondary leading-tight" style={{fontFamily: "Roboto"}}>
                         {description}
                       </p>
                     </div>

@@ -11,13 +11,17 @@ function Footer() {
       <footer className="footer-section">
         <div className="container">
           <div className="footer-cta pt-5 pb-5">
-            <div className="row">
+            <div className="row ">
               <div className="col-xl-4 col-md-4 mb-30">
                 <div className="single-cta">
                   <i className="fas fa-map-marker-alt"></i>
                   <div className="cta-text">
                     <h4>Find us</h4>
-                    <span> kerala, infopark, kochin</span>
+                    <span>
+                      <a style={{ color: "gray" }} href="https://www.google.com/maps/place/Cyberpark+Kozhikode/@11.2863612,75.7940973,13z/data=!4m10!1m2!2m1!1skozhikode+it+park!3m6!1s0x3ba65b946032ba75:0xf5ed91156d32a4f2!8m2!3d11.2541826!4d75.8370307!15sChFrb3poaWtvZGUgaXQgcGFya5IBD3RlY2hub2xvZ3lfcGFya-ABAA!16s%2Fg%2F1v6p78_h?entry=ttu">
+                        kerala, infopark, kochin
+                      </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -26,7 +30,9 @@ function Footer() {
                   <i className="fas fa-phone"></i>
                   <div className="cta-text">
                     <h4>Call us</h4>
-                    <span>+91-9876543210 </span>
+                    <span>
+                      <a style={{ color: "gray" }} href="tel:+918899908450">+91-8899908450</a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -35,7 +41,11 @@ function Footer() {
                   <i className="far fa-envelope-open"></i>
                   <div className="cta-text">
                     <h4>Mail us</h4>
-                    <span>mail@info.com</span>
+                    <span>
+                      <a style={{ color: "gray" }} href="mailto:contact@wexorai.com">
+                        contact@wexorai.com
+                      </a>
+                    </span>{" "}
                   </div>
                 </div>
               </div>
@@ -51,9 +61,7 @@ function Footer() {
                       alt="Login Image"
                       width={800}
                       height={750}
-                      style={{ borderRadius: '10px' }}
-
-                    />
+                      style={{ borderRadius: "10px" }}                  />
                   </div>
                   <div className="footer-text">
                     <p>

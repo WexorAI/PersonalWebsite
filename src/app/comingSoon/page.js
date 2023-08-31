@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./comingSoon.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function comingSoon() {
   return (
@@ -20,12 +21,18 @@ function comingSoon() {
             <a href="/" class="btn2 btn">
               Back to Home
             </a> */}
-                 <a href="/" class="button2">
-                  🡨 BACK to home
-                  </a>
-                  <a href="/contactus" class="button2">
-                    CONTACT US
-                  </a>{" "}
+
+                   <Link legacyBehavior href='/'>
+                     <a class="button2">
+                      🡨 BACK to home
+                      </a>
+                   </Link>
+
+                  <Link legacyBehavior href='/contactus'>
+                    <a  class="button2">
+                      CONTACT US
+                    </a>
+                  </Link>
             <Image
               src="rocket.png"
               alt="Login Image"
