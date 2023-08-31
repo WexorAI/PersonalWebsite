@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 * {
   font-family: "Open Sans", sans-serif;
@@ -59,46 +60,7 @@
   font-size: 1.1rem;
   color: white;
 }
-/* button  */
-/* .contentt a {
-  color: white;
-  display: inline-block;
-  padding: 2.1% 4%;
-  overflow: hidden;
-  border-radius: 0;
-  text-decoration: none;
-}
 
-.btn1 {
-  border: 1px solid white;
-  transition: 0.2s ease-in-out;
-}
-
-.btn1:hover {
-  border: 1px solid white;
-  background-color: white;
-  color: black;
-  transition: 0.2s ease-in-out;
-}
-
-.btn2 {
-  margin-left: 3%;
-  background: linear-gradient(to right, #252aff 0%, #25ffed 100%);
-  border-image: linear-gradient(to bottom right, #252aff 0%, #25ffed 100%);
-  border-image-slice: 1;
-  border-width: 1px;
-  border-style: solid;
-  transition: 0.2s ease-in-out;
-}
-
-.btn2:hover {
-  background: none;
-  border-image: linear-gradient(to bottom right, #252aff 0%, #25ffed 100%);
-  border-image-slice: 1;
-  border-width: 1px;
-  border-style: solid;
-  transition: 0.2s ease-in-out;
-} */
 a.button2 {
     display: inline-block;
     padding: 0.5em 3em;
