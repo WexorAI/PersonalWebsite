@@ -94,6 +94,10 @@
   font-size: 30px;
   color: #3e2093;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+
 }
 .contents .left-side .details .topic {
   font-size: 18px;
@@ -163,6 +167,7 @@
     flex-direction: row;
     margin-top: 40px;
     justify-content: center;
+    
     flex-wrap: wrap;
   }
   .containers .contents .left-side::before {

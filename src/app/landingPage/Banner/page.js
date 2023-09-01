@@ -76,11 +76,15 @@ function Banner() {
             >
               <Link href="/contactus">
                 <button className="btn btn-lg">contact Us</button>
-                {/* contact Us */}
+                {/* contact Us */}               
               </Link>
-              <a href="/socialMedia" className="text-gradient btn-link">
+              <Link href="/comingSoon">
+
+              <div className="text-gradient btn-link">
                 Try It
-              </a>
+              </div>
+              </Link>
+
             </motion.div>
             {/* social media icons */}
             <motion.div
