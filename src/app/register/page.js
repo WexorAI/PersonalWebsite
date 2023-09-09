@@ -72,12 +72,9 @@ function register() {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.15 }}
           className=" col-lg-3 hidden lg:flex flex-1 "
-          style={{ background: "#090447",paddingTop:"250px"  }}
+          style={{ background: "#090447", paddingTop: "250px" }}
         >
-         
-          <p
-            className="container mb-8 mx-w-lg mx-auto lg:max-0"
-          >
+          <p className="container mb-8 mx-w-lg mx-auto lg:max-0">
             We are passionate about crafting innovative solutions to bring your
             ideas to life.
           </p>
@@ -147,7 +144,7 @@ function register() {
                 >
                   <Input
                     prefix={<UserOutlined className="site-form-item-icon" />}
-                    type="Email"
+                    type="email"
                     placeholder="Email"
                   />
                 </Form.Item>
@@ -240,7 +237,12 @@ function register() {
           className="col-lg-6 col-md-7 "
         >
           {/* <Image src="/133.png" alt="Login Image" width={800} height={750} /> */}
-          <img src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/133.png  " alt="Login Image" width="800" height="750" />
+          <img
+            src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/133.png  "
+            alt="Login Image"
+            width="800"
+            height="750"
+          />
         </motion.div>
       </div>
     </section>
