@@ -1,6 +1,6 @@
 const dotenv = require("dotenv");
 // import ENVs from ".env.local" and append to process
-dotenv.config({ path: ".env.local" }); 
+dotenv.config({ path: ".env.local" });
 const express = require("express");
 const address = require("address");
 const chalk = require("chalk");
@@ -22,9 +22,9 @@ app.listen(PORT, (err) => {
     console.log(
       `\n${chalk.rgb(7, 54, 66).bgRgb(38, 139, 210)(" I ")} ${chalk.blue(
         "Application is running at"
-      )} ${chalk.rgb(235, 220, 52).bold(LOCALHOST)} ${chalk.blue(
-        "or"
-      )} ${chalk.rgb(235, 220, 52).bold(`http://${LOCALIP}:${PORT}`)}\n`
+      )} ${chalk.rgb(235, 220, 52).bold(LOCALHOST)} ${chalk.blue("or")} ${chalk
+        .rgb(235, 220, 52)
+        .bold(`http://${LOCALIP}:${PORT}`)}\n`
     );
   } else {
     console.err(`\nUnable to start server: ${err}`);

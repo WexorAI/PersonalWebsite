@@ -1,16 +1,16 @@
-"use client"
-import React from 'react'
+"use client";
+import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../app/components/Variants";
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 function Work() {
   return (
-    <section className="section flex items-center "  id="work">
+    <section className="section flex items-center " id="work">
       <div className="container max-auto">
-        <div className=" flex flex-col lg:flex-row gap-x-10 " >
+        <div className=" flex flex-col lg:flex-row gap-x-10 ">
           <motion.div
             variants={fadeIn("right", 0.5)}
             initial="hidden"
@@ -26,18 +26,23 @@ function Work() {
                 work
               </h2>
               <p className=" max-w-sm mb-16">
-              Empower your business with our AI-powered chatbots for 24/7 support and customer satisfaction...... </p>
-              <Link  href="/comingSoon" ><button className=" btn btn-sm">see Our website</button></Link>
+                Empower your business with our AI-powered chatbots for 24/7
+                support and customer satisfaction. Explore our portfolio to see
+                how we've transformed ideas into digital reality
+              </p>
+              <Link href="/comingSoon">
+                <button className=" btn btn-sm">see Our website</button>
+              </Link>
             </div>
             {/* image one */}
             <div className=" group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300 "></div>
               {/* img */}
               <Image
-              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/work.jpg"
-              alt="Login Image"
-              width={800}
-              height={750}
+                src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/work.jpg"
+                alt="Login Image"
+                width={800}
+                height={750}
                 className="group-hover:scale-125 transition-all duration-500"
               />
               {/* pretitle */}
@@ -50,7 +55,7 @@ function Work() {
               </div>
             </div>
           </motion.div>
-          <motion.div 
+          <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
@@ -62,10 +67,10 @@ function Work() {
               <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300 "></div>
               {/* img */}
               <Image
-              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/work.jpg"
-              alt="Login Image"
-              width={800}
-              height={750}
+                src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/work.jpg"
+                alt="Login Image"
+                width={800}
+                height={750}
                 className="group-hover:scale-125 transition-all duration-500"
               />
               {/* pretitle */}
@@ -83,11 +88,10 @@ function Work() {
               <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300 "></div>
               {/* img */}
               <Image
-              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/work.jpg"
-              alt="Login Image"
-              width={800}
-              height={750}
-
+                src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/work.jpg"
+                alt="Login Image"
+                width={800}
+                height={750}
                 className="group-hover:scale-125 transition-all duration-500"
               />
               {/* pretitle */}
@@ -103,7 +107,7 @@ function Work() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Work
+export default Work;

@@ -142,7 +142,6 @@ function Login() {
           width={800}
           height={800}
         />
-
       </motion.div>
     </div>
   );

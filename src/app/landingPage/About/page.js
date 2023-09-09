@@ -3,9 +3,7 @@ import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-// import { fadeIn } from "@/app/components/Variants";
 import { fadeIn } from "../../../app/components/Variants";
-
 import Image from "next/image";
 
 function About() {
@@ -43,14 +41,17 @@ function About() {
             <h2 className=" h2 text-accent ">About </h2>
             <h3 className="h3 mb-4 ">Welcome to WexorAI!</h3>
             <p className=" mb-6  ">
-              We're passionate about transforming businesses through technology.
-              Specializing in chatbot creation and AI automation, we streamline
-              operations and enhance customer experiences. Our expert team
-              handles web development, software, and app development, meeting
-              all your digital needs. Empower your business with our AI-powered
-              chatbots for 24/7 support and improved customer satisfaction.
-              Embrace automation to boost efficiency, reduce errors, and drive
-              digital transformation with WexorAI
+              Your Technological Transformation Partner!... At WexorAI, our
+              passion lies in revolutionizing businesses through advanced
+              technology. We specialize in creating chatbots and implementing AI
+              automation to optimize operations and elevate customer
+              experiences. Our team of experts is well-versed in web
+              development, software solutions, and app development, catering to
+              all your digital requirements. Supercharge your business with our
+              AI-powered chatbots, ensuring round-the-clock support and
+              significantly enhancing customer satisfaction. Embrace automation
+              to skyrocket efficiency, reduce errors, and lead the way in
+              digital transformation with WexorAI."
             </p>
             {/* stats */}
             {/* <div className="flex gap-x-6 lg:gap-x-10 mb-12">
