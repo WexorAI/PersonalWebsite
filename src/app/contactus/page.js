@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import styles from "./ContactUs.css";
 import {
   FaArrowLeft,
@@ -7,49 +6,11 @@ import {
   FaMapMarkerAlt,
   FaPhone,
 } from "react-icons/fa";
-import Link from "next/link";
-import axios from "axios"; // Import Axios
-
-
+import ContactForm from "./ContactForm";
+export const metadata = {
+  title: "ContactUs",
+};
 function ContactUs() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-
-    // Send data to your Node.js server
-    axios
-      .post("https://chatbot.wexorai.com/clientmessagef3", {
-        client_id: "wexorai",
-        name: formData.name,
-        email: formData.email,
-        subject: "nothing",
-        message: formData.message,
-      })
-      .then(function (response) {
-        if (response.data.status) {
-          // Email sent successfully, you can show a success message here.
-          alert("Email sent successfully!");
-        } else {
-          // Handle errors here if the email failed to send.
-          alert("Error sending the email. Please try again later.");
-        }
-      })
-      .catch(function (error) {
-        // Handle network or other errors here.
-        console.error("Error:", error);
-        alert("Error sending the email. Please try again later.");
-      });
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
   return (
     <div className="soon">
       <div className="containerr">
@@ -108,49 +69,7 @@ function ContactUs() {
                       may have. I'm here to assist you and provide the help you
                       need.
                     </p>
-                    <form onSubmit={handleFormSubmit}>
-                      <div className="input-box">
-                        <input
-                          type="text"
-                          placeholder="Enter your name"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleInputChange}
-                          required
-                        />
-                      </div>
-                      <div className="input-box">
-                        <input
-                          type="email"
-                          placeholder="Enter your email"
-                          name="email"
-                          value={formData.email}
-                          onChange={handleInputChange}
-                          required
-                        />
-                      </div>
-                      <div className="input-box message-box">
-                        <input
-                          type="text"
-                          placeholder="Enter your message"
-                          name="message"
-                          value={formData.message}
-                          onChange={handleInputChange}
-                          required
-                        />
-                      </div>
-                      <div>
-                        <div>
-                          <Link legacyBehavior href="/">
-                            <button className="button2">🡨 BACK to home</button>
-                          </Link>
-
-                          <button type="submit" className="button2">
-                            Send
-                          </button>
-                        </div>
-                      </div>
-                    </form>
+                    <ContactForm />
                   </div>
                 </div>
               </div>{" "}
@@ -163,50 +82,3 @@ function ContactUs() {
 }
 
 export default ContactUs;
-
-// import React, { useState } from 'react';
-// import axios from 'axios';
-
-// const ContactUsPage = () => {
-//   const [email, setEmail] = useState('');
-//   const [message, setMessage] = useState('');
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-
-//     try {
-//       const response = await axios.post('http://127.0.0.1:5000/clientmessagef3', {
-//         email: email,
-//         message: message,
-//       });
-
-//       console.log(response.data);
-//     } catch (error) {
-//       console.error(error);
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h1>Contact Us</h1>
-//       <form onSubmit={handleSubmit}>
-//         <label>Email:</label>
-//         <input
-//           type="email"
-//           value={email}
-//           onChange={(e) => setEmail(e.target.value)}
-//         />
-//         <br />
-//         <label>Message:</label>
-//         <textarea
-//           value={message}
-//           onChange={(e) => setMessage(e.target.value)}
-//         ></textarea>
-//         <br />
-//         <button type="submit">Submit</button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default ContactUsPage;

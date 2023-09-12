@@ -12,14 +12,13 @@ body {
   bottom: 0;
   right: 30px;
   z-index: 2;
-
 }
 
 .collapsible {
   position: relative;
   left: 250px;
   padding: 18px;
-overflow: hidden;
+  overflow: hidden;
   /* z-index: 2; */
   /* color: white; */
   /* cursor: pointer; */

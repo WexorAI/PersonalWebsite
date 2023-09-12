@@ -3,60 +3,60 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    overflow: hidden;
+* {
+  overflow: hidden;
 }
 * {
-    font-family: "Libre Baskerville", serif;
-  }
-  .divider:after,
-  .divider:before {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: #eee;
-  }
-  
-  .google-btn {
-    position: relative;
-    width: auto;
-    height: 50px;
-    background-color: #33b8ff;
-    border-radius: 20px;
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
-  }
-  .google-icon-wrapper {
-    position: absolute;
-    margin-top: 1px;
-    margin-left: 1px;
-    width: 48px;
-    height: 48px;
-    border-radius: 20px;
-    background-color: white;
-  }
-  .google-icon {
-    margin-top: 9px;
-    margin-left: 9px;
-    width: 30px;
-    height: 30px;
-  }
-  /* THIS IS THE PROBLUM OF BANNER BUG */
-  /* .text-center {
+  font-family: "Libre Baskerville", serif;
+}
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.google-btn {
+  position: relative;
+  width: auto;
+  height: 50px;
+  background-color: #33b8ff;
+  border-radius: 20px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 48px;
+  height: 48px;
+  border-radius: 20px;
+  background-color: white;
+}
+.google-icon {
+  margin-top: 9px;
+  margin-left: 9px;
+  width: 30px;
+  height: 30px;
+}
+/* THIS IS THE PROBLUM OF BANNER BUG */
+/* .text-center {
     margin-left: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
   } */
-  .btn-text {
-    margin: 11px 11px 0 0;
-    color: white;
-    margin-top: 13px;
-    font-size: 14px;
-    letter-spacing: 0.3px;
-    font-family: "Roboto";
-  }
-  
-  /* .img-fluid{
+.btn-text {
+  margin: 11px 11px 0 0;
+  color: white;
+  margin-top: 13px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  font-family: "Roboto";
+}
+
+/* .img-fluid{
       background-size: cover;
       display: block;
     }
@@ -66,38 +66,36 @@
       display: none;
     }
   } */
-  
-  @import url(https://fonts.googleapis.com/css?family=Roboto:500); 
-  @import url(https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300&display=swap);
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+@import url(https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300&display=swap);
 
-  @layer base {
-    body {
-      @apply font-secondary  leading-8 text-white;
-    }
-    .h2 {
-      @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
-    }
-    .h3 {
-      @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
-    }
-    .btn {
-      @apply rounded-full font-primary text-white font-medium;
-    }
-    .btn-sm {
-      @apply h-[48px] px-6 text-sm;
-    }
-    .btn-lg {
-      @apply h-[56px] px-10 text-base;
-    }
-    .btn-link {
-      @apply text-base;
-    }
-    .text-gradient {
-      @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
-    }
-    .section {
-      @apply py-8 lg:py-24 lg:h-screen flex items-center;
-    }
+@layer base {
+  body {
+    @apply font-secondary  leading-8 text-white;
   }
-  
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}

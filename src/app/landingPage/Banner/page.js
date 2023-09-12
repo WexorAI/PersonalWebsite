@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import {  FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 // import ReactTooltip from "react-tooltip";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -62,10 +62,11 @@ function Banner() {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 mx-w-lg mx-auto lg:max-0"
             >
-              We are passionate about crafting innovative solutions that
-              leverage cutting-edge technologies to bring your ideas to life.
-              Our team of experts specializes in a range of services to meet
-              your digital needs.
+              At WexorAI, we are dedicated to creating inventive solutions that
+              harness the power of the latest technologies to transform your
+              concepts into reality. Our team of skilled professionals excels in
+              a variety of services tailored to fulfill your digital
+              requirements.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -76,15 +77,11 @@ function Banner() {
             >
               <Link href="/contactus">
                 <button className="btn btn-lg">contact Us</button>
-                {/* contact Us */}               
+                {/* contact Us */}
               </Link>
               <Link href="/comingSoon">
-
-              <div className="text-gradient btn-link">
-                Try It
-              </div>
+                <div className="text-gradient btn-link">Try It</div>
               </Link>
-
             </motion.div>
             {/* social media icons */}
             <motion.div
@@ -94,8 +91,8 @@ function Banner() {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-                 <a href="https://www.linkedin.com/company/wexorai/">
-                <FaLinkedin /> 
+              <a href="https://www.linkedin.com/company/wexorai/">
+                <FaLinkedin />
               </a>
               <a href="/instagram">
                 <FaInstagram />

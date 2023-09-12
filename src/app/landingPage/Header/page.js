@@ -9,13 +9,13 @@ function Header() {
         <div className="flex justify-between items-center">
           {/* <a href="/landingPage"> */}
 
-            <Image
-              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/wexorLogo.jpg"
-              alt="Login Image"
-              width={90}
-              height={90}
-              style={{ borderRadius: '25%' }}
-            />
+          <Image
+            src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/wexorLogo.jpg"
+            alt="Login Image"
+            width={90}
+            height={90}
+            style={{ borderRadius: "25%" }}
+          />
           {/* </a> */}
           {/* <Link href={"/login"}>
             <button className="btn btn-sm ">work with us</button>

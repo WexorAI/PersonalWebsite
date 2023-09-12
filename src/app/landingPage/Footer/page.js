@@ -1,11 +1,30 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import bg from "../../../../public/send.png";
 import styles from "./Footer.css";
 import Link from "next/link";
 import Image from "next/image";
-
+// import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
+import { smoothScroll } from "../../components/scroll";
 function Footer() {
+  const router = useRouter();
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Get the email input value
+    const email = e.target.email.value;
+
+    // Simple email validation (you can use a more comprehensive regex)
+    if (!email || !email.includes("@")) {
+      alert("Please enter a valid email address");
+      return;
+    }
+    router.push("/contactus");
+  };
   return (
     <div>
       <footer className="footer-section">
@@ -18,7 +37,10 @@ function Footer() {
                   <div className="cta-text">
                     <h4>Find us</h4>
                     <span>
-                      <a style={{ color: "gray" }} href="https://www.google.com/maps/place/Cyberpark+Kozhikode/@11.2863612,75.7940973,13z/data=!4m10!1m2!2m1!1skozhikode+it+park!3m6!1s0x3ba65b946032ba75:0xf5ed91156d32a4f2!8m2!3d11.2541826!4d75.8370307!15sChFrb3poaWtvZGUgaXQgcGFya5IBD3RlY2hub2xvZ3lfcGFya-ABAA!16s%2Fg%2F1v6p78_h?entry=ttu">
+                      <a
+                        style={{ color: "gray" }}
+                        href="https://www.google.com/maps/place/Cyberpark+Kozhikode/@11.2863612,75.7940973,13z/data=!4m10!1m2!2m1!1skozhikode+it+park!3m6!1s0x3ba65b946032ba75:0xf5ed91156d32a4f2!8m2!3d11.2541826!4d75.8370307!15sChFrb3poaWtvZGUgaXQgcGFya5IBD3RlY2hub2xvZ3lfcGFya-ABAA!16s%2Fg%2F1v6p78_h?entry=ttu"
+                      >
                         kerala, Cyberpark Kozhikode
                       </a>
                     </span>
@@ -31,7 +53,9 @@ function Footer() {
                   <div className="cta-text">
                     <h4>Call us</h4>
                     <span>
-                      <a style={{ color: "gray" }} href="tel:+918899908450">+91-8899908450</a>
+                      <a style={{ color: "gray" }} href="tel:+918899908450">
+                        +91-8899908450
+                      </a>
                     </span>
                   </div>
                 </div>
@@ -42,7 +66,10 @@ function Footer() {
                   <div className="cta-text">
                     <h4>Mail us</h4>
                     <span>
-                      <a style={{ color: "gray" }} href="mailto:contact@wexorai.com">
+                      <a
+                        style={{ color: "gray" }}
+                        href="mailto:contact@wexorai.com"
+                      >
                         contact@wexorai.com
                       </a>
                     </span>{" "}
@@ -61,14 +88,15 @@ function Footer() {
                       alt="Login Image"
                       width={800}
                       height={750}
-                      style={{ borderRadius: "10px" }}                  />
+                      style={{ borderRadius: "10px" }}
+                    />
                   </div>
                   <div className="footer-text">
                     <p>
-                      We are passionate about crafting innovative solutions that
-                      leverage cutting-edge technologies to bring your ideas to
-                      life. Our team of experts specializes in a range of
-                      services to meet your digital needs.
+                      Ready to take your business to the next level? Contact us
+                      today. We're passionate about crafting innovative
+                      solutions that leverage cutting-edge technologies to bring
+                      your ideas to life
                     </p>
                   </div>
                   <div className="footer-social-icon">
@@ -94,22 +122,33 @@ function Footer() {
                   </div>
                   <ul>
                     <li>
-                      <a href="/">Home</a>
+                      <a href="#home" onClick={() => smoothScroll("#home")}>
+                        Home
+                      </a>
                     </li>
                     <li>
-                      <a href="/about">about</a>
+                      <a href="#about" onClick={() => smoothScroll("#about")}>
+                        about
+                      </a>
                     </li>
                     <li>
-                      <a href="/services">services</a>
+                      <a
+                        href="#services"
+                        onClick={() => smoothScroll("#services")}
+                      >
+                        services
+                      </a>
                     </li>
                     <li>
-                      <a href="">portfolio</a>
+                      <a href="#work" onClick={() => smoothScroll("#work")}>
+                        work
+                      </a>
                     </li>
                     <li>
-                      <a href="/login">Contact</a>
+                      <a href="/contactus">Contactus</a>
                     </li>
                     <li>
-                      <a href="/about">About us</a>
+                      <a href="/comingSoon">visit our website</a>
                     </li>
                   </ul>
                 </div>
@@ -126,9 +165,13 @@ function Footer() {
                     </p>
                   </div>
                   <div className="subscribe-form">
-                    <form action="#">
-                      <input type="text" placeholder="Email Address" />
-                      <button>send</button>
+                    <form onSubmit={handleSubmit}>
+                      <input
+                        type="text"
+                        name="email"
+                        placeholder="Email Address"
+                      />
+                      <button type="submit">Send</button>
                     </form>
                   </div>
                 </div>
@@ -139,21 +182,14 @@ function Footer() {
         <div className="copyright-area">
           <div className="container">
             <div className="row">
-              <div className="col-xl-6 col-lg-6 text-center text-lg-left">
-                <div className="copyright-text">
-                  <a href="/">
-                    <p>Copyright &copy; 2023, All Right Reserved WexorAI</p>
-                  </a>
-                </div>
-              </div>
-              <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div className="col-xl-6 col-lg-6 d-none d-lg-block text-left">
                 <div className="footer-menu">
                   <ul>
                     <li>
-                      <a href="/">Home</a>
+                      <a href="#home" onClick={() => smoothScroll("#home")}>Home</a>
                     </li>
                     <li>
-                      <a href="/">Terms</a>
+                      <a href="/contactus">Contact</a>
                     </li>
                     <li>
                       <a href="/">Privacy</a>
@@ -162,9 +198,16 @@ function Footer() {
                       <a href="/">Policy</a>
                     </li>
                     <li>
-                      <a href="/">Contact</a>
+                      <a href="/">Terms</a>
                     </li>
                   </ul>
+                </div>
+              </div>
+              <div className="col-xl-6 col-lg-6 text-center text-lg-right">
+                <div className="copyright-text">
+                  <a href="/">
+                    <p>Copyright &copy; 2023, All Right Reserved WexorAI</p>
+                  </a>
                 </div>
               </div>
             </div>

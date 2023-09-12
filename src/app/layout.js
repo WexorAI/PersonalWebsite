@@ -5,8 +5,12 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "WEXORE AI ",
-  description: "AI business solutions",
+  title:{
+     default : "WEXOR AI ",
+    template:"%s | WEXOR AI ",
+},
+  description : "AI business solutions",
+
 };
 
 export default function RootLayout({ children }) {
@@ -38,10 +42,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         ></link>
         {/* font awsome */}
-        <link
+        {/* <link
           rel="stylesheet"
           href="path/to/font-awesome/css/font-awesome.min.css"
-        ></link>
+        ></link> */}
       </head>
       <body className="text-white font-secondary text-lg leading-8">
         {children}

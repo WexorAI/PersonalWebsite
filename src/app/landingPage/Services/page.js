@@ -12,25 +12,26 @@ const services = [
   {
     name: "Web Development:",
     description:
-      "Our team creates visually stunning and highly functional websites that are tailored to suit your business requirements.",
+      "Our web team excels in crafting visually captivating, functional websites, tailored to your unique business needs. Find your perfect online brand representation with us.",
+
     link: "lern more",
   },
   {
     name: "Software Development:",
     description:
-      " Our skilled software developers are proficient in creating scalable and efficient solutions that cater to your specific organizational needs",
+      "Unleash your organization's potential with our expert software development. Specializing in scalable, efficient solutions tailored to your needs, we ensure seamless business operations.",
     link: "lern more",
   },
   {
     name: "App Development:",
     description:
-      "In the era of smartphones, Our app development services encompass both iOS and Android platforms, delivering user-friendly and feature-rich apps.",
+      "Discover user-friendly, feature-rich apps on Android and iOS , boosting your mobile presence effectively in this smartphone era.",
     link: "lern more",
   },
   {
     name: "Chatbot & AI Automation:",
     description:
-      "Our AI-powered chatbots provide real-time assistance and reduce support team workload, while AI automation streamlines workflows for increased productivity.",
+      "Elevate customer support and workflow efficiency with our AI solutions. We offer real-time assistance, reducing support team workload. Our AI automation boosts productivity.",
     link: "lern more",
   },
 ];
@@ -46,18 +47,19 @@ function Services() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className=" flex-1 lg:bg-services lg:bg-botton bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
-            style={{margin: "auto"}}
+            style={{ margin: "auto" }}
           >
             <span className="h2 mb-6">What We Offer:</span>
             <h1>Our Servicess</h1>
-            <hr/>
+            <hr />
             <p className=" max-w-[455px] mb-16  ">
-              We are passionate about crafting innovative solutions that
-              leverage cutting-edge technologies to bring your ideas to life.
-              Our team of experts specializes in a range of services to meet
-              your digital needs.
+              Welcome to WexorAI,the leading provider of cutting-edge technology
+              solutions. Our expertise lies in delivering innovative services
+              that empower your business to excel in the digital age. You can
+              explore the wide range of solutions we offer to help your business
+              thrive:
             </p>
-            <span className="border-b border-white/20 flex"/>
+            <span className="border-b border-white/20 flex" />
 
             {/* <a href="#">download app</a> */}
             {/* <Link href={"/login"}>
@@ -85,7 +87,10 @@ function Services() {
                       <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6  ">
                         {name}
                       </h4>
-                      <p className=" font-secondary leading-tight" style={{fontFamily: "Roboto"}}>
+                      <p
+                        className=" font-secondary leading-tight"
+                        style={{ fontFamily: "Roboto" }}
+                      >
                         {description}
                       </p>
                     </div>

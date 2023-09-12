@@ -7,12 +7,13 @@ import Header from "./landingPage/Header/page";
 import Services from "./landingPage/Services/page";
 import Work from "./landingPage/Work/page";
 // import bg from "../../public/leadspace.png";
-
+// export const metadata = {
+//   title: "Home page",
+// };
 export default function Home() {
   return (
-      <div
+    <div
       style={{ backgroundColor: "#090447" }}
-
       className="bg-site bg-no-repeat
         bg-cover overflow-hidden"
     >

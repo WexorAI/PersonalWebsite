@@ -2,7 +2,9 @@ import React from "react";
 import styles from "./comingSoon.css";
 import Image from "next/image";
 import Link from "next/link";
-
+export const metadata = {
+  title:"comingSoon"
+}
 function comingSoon() {
   return (
     <div className="soon">
@@ -22,17 +24,13 @@ function comingSoon() {
               Back to Home
             </a> */}
 
-                   <Link legacyBehavior href='/'>
-                     <a class="button2">
-                      🡨 BACK to home
-                      </a>
-                   </Link>
+            <Link legacyBehavior href="/">
+              <a class="button2">🡨 BACK to home</a>
+            </Link>
 
-                  <Link legacyBehavior href='/contactus'>
-                    <a  class="button2">
-                      CONTACT US
-                    </a>
-                  </Link>
+            <Link legacyBehavior href="/contactus">
+              <a class="button2">CONTACT US</a>
+            </Link>
             <Image
               src="rocket.png"
               alt="Login Image"
