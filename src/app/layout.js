@@ -5,12 +5,21 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title:{
-     default : "WEXOR AI ",
-    template:"%s | WEXOR AI ",
-},
-  description : "AI business solutions",
-
+  metadataBase: new URL("https://wexorai.com"),
+  title: {
+    default: "WEXOR AI",
+    template: `%s | WEXOR AI`,
+  },
+  description: "AI business solutions",
+  verification: {
+    google: "google-site-verification: google13431dd41fcdcc70.html",
+  },
+  category:"technology",
+  robots:{
+    index: false,
+    follow:true,
+    nocache:true,
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -69,11 +78,11 @@ export default function RootLayout({ children }) {
           async // Add the async attribute to load asynchronously
         ></script>
         {/* j quary link */}
-        <script
+        {/* <script
           src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
           type="text/javascript"
           async // Add the async attribute to load asynchronously
-        ></script>
+        ></script> */}
       </body>
     </html>
   );

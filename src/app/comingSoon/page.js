@@ -2,9 +2,14 @@ import React from "react";
 import styles from "./comingSoon.css";
 import Image from "next/image";
 import Link from "next/link";
+
 export const metadata = {
-  title:"comingSoon"
-}
+  title: "comingSoon page",
+  description:"Perfect and awesome to present your future product or service.Hooking audience attention is all in the opener.",
+  alternates:{
+    canonical:`/comingSoon`
+  }
+};
 function comingSoon() {
   return (
     <div className="soon">
