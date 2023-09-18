@@ -4,6 +4,7 @@ import axios from "axios";
 import "./ChatBot.css"; // Make sure to adjust the path to your CSS file
 import { Button } from "antd";
 import { title } from "process";
+import Image from "next/image";
 
 function Chatbot() {
   const [botMessage, setBotMessage] = useState("Loading...");
@@ -126,7 +127,7 @@ function Chatbot() {
               alignItems: "center",
             }}
           >
-            <img
+            <Image
               src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/chatIcon.png"
               alt="Login Image"
               width={50}
@@ -186,7 +187,7 @@ function Chatbot() {
           </div>
         </div>
       </div>
-      <img
+      <Image
         src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/chatIcon.png"
         alt="Login Image"
         width={90}

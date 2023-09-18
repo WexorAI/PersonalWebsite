@@ -12,10 +12,10 @@ function Work() {
       <div className="container max-auto">
         <div className=" flex flex-col lg:flex-row gap-x-10 ">
           <motion.div
-            variants={fadeIn("right", 0.5)}
+            variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
           >
             {/* text */}
@@ -56,10 +56,10 @@ function Work() {
             </div>
           </motion.div>
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("right", 0.1)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1}}
             className="flex-1 flex flex-col gap-y-10 "
           >
             {/* image two */}

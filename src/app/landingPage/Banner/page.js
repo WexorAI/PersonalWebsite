@@ -14,6 +14,8 @@ function Banner() {
       className="min-h-[85vh] lg:min-h-[78vh] flex items-center "
       id="home"
     >
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
       <div className="container mx-auto">
         <div className=" flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           {/* text */}

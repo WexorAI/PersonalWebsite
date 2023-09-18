@@ -11,14 +11,9 @@
   background: #060556;
 }
 
-/* img {
-  max-width: 100%;
-} */
-
 .containerr {
   height: 100vh;
   width: 100%;
-  /* background-image: url("http://html.medhati.com/trendy/assets/img/slider2.jpg"); */
   background-size: cover;
   background-position: 50% 0%;
   overflow: hidden;
@@ -45,7 +40,6 @@
 }
 
 .contentt {
-  /* transform:rotate(50deg); */
   padding: 1rem;
   color: white;
 }
@@ -114,14 +108,11 @@ a.button2:active {
 
 @media screen and (max-width: 355px) {
   .contentt {
-    /* transform:rotate(50deg); */
     padding: 1rem 1.4rem;
   }
 
   .contentt h1 {
     font-size: 2.5rem;
-    /*margin: 5px 0px;*/
-    /*line-height: 1.2;*/
   }
 
   .wrapperr {
@@ -142,7 +133,6 @@ a.button2:active {
 }
 @media screen and (min-width: 356px) and (max-width: 650px) {
   .contentt {
-    /*transform:rotate(50deg);*/
     padding: 1rem 1.4rem;
   }
 
