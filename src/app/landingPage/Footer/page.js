@@ -84,7 +84,7 @@ function Footer() {
                 <div className="footer-widget">
                   <div className="footer-logo">
                     <Image
-                      src="wexorwhiteimg.jpg"
+                      src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/wexorwhiteimg.jpg"
                       alt="Login Image"
                       width={800}
                       height={750}

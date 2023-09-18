@@ -9,6 +9,11 @@ import {
 import ContactForm from "./ContactForm";
 export const metadata = {
   title: "ContactUs",
+  description:"Feel free to reach out with any questions or inquiries you may have. I'm here to assist you and provide the help youneed.",
+  alternates:{
+    canonical:`/contactus`,
+    
+  }
 };
 function ContactUs() {
   return (

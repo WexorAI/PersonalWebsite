@@ -42,10 +42,10 @@ function Services() {
         <div className="side flex flex-col lg:flex-row ">
           {/* text&image*/}
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("right", 0.1)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             className=" flex-1 lg:bg-services lg:bg-botton bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
             style={{ margin: "auto" }}
           >
@@ -68,10 +68,10 @@ function Services() {
           </motion.div>
           {/* services section */}
           <motion.div
-            variants={fadeIn("left", 0.5)}
+            variants={fadeIn("left", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             className="flex-1"
           >
             <div>
