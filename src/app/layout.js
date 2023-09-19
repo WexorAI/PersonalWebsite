@@ -19,7 +19,8 @@ export const metadata = {
     index: false,
     follow:true,
     nocache:true,
-  }
+  },
+  keywords:["wexor","wexorAI","wexorAI website","AI automation in Calicut","software development in Calicut","AI automation in Kerala","software development in Kerala","AI automation in Kottakkal","software development in Kottakkal","wexorai contactus page","wexorai login page","wexor ai register page",]
 };
 
 export default function RootLayout({ children }) {
@@ -58,6 +59,26 @@ export default function RootLayout({ children }) {
       </head>
       <body className="text-white font-secondary text-lg leading-8">
         {children}
+{/* venta.js file */}
+{/* <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+      <script>
+VANTA.NET({{
+  el: "#",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x8686f7,
+  backgroundColor:"0x#090447",
+  points: 13.00,
+  maxDistance: 22.00,
+  spacing: 16.00
+}})
+</script> */}
 
         <script
           src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
