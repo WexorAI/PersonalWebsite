@@ -37,7 +37,11 @@ const services = [
 ];
 function Services() {
   return (
-    <section className="section" id="services">
+    <section
+      className="section"
+      id="services"
+      style={{ backgroundColor: "#11173d" }}
+    >
       <div className="container mx-auto">
         <div className="side flex flex-col lg:flex-row ">
           {/* text&image*/}
