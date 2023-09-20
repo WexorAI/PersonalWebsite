@@ -1,12 +1,14 @@
 import styles from "../app/landingPage/landingPage.css";
 import Chatbot from "./ChatBot/page";
-import BackgroundVideo from "./components/BackgroundVideo";
+import Background from "./components/Background";
 import About from "./landingPage/About/page";
 import Banner from "./landingPage/Banner/page";
 import Footer from "./landingPage/Footer/page";
 import Header from "./landingPage/Header/page";
 import Services from "./landingPage/Services/page";
 import Work from "./landingPage/Work/page";
+import React from "react";
+
 // import bg from "../../public/leadspace.png";
 export const metadata = {
   title: "Home page",
@@ -33,17 +35,11 @@ export default function Home() {
   // }, []);
   return (
     <div
-      style={{ backgroundColor: "#090447" }}
+      style={{ backgroundColor: "#0d1145" }}
       className="bg-site bg-no-repeat
         bg-cover overflow-hidden"
     >
-      <BackgroundVideo
-        // aria-hidden="true"
-        // playsinline
-        // peload="none"
-        // muted
-        // loop
-      />
+      <Background  />
       <Header />
       <Banner />
       {/* <NavBar /> */}

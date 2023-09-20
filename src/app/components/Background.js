@@ -1,40 +1,32 @@
-// //Background.js
-// import { useState, useRef, useEffect } from "react";
-// import NET from "vanta/dist/vanta.net.min";
-// import * as THREE from "three";
+"use client";
 
-// export default function Background({ width, height, children }) {
-//   const [vantaEffect, setVantaEffect] = useState(0);
+import React from "react";
+import styles from "./Background.css";
+function Background() {
+  const videoRef = React.useRef();
 
-//   const vantaRef = useRef(null);
+  React.useEffect(() => {
+    const video = videoRef.current;
+    video.play();
+    video.loop = true;
+    video.muted = true;
+  }, []);
+  return (
+    <div >
+      <div className="overlay" style={{zIndex:1}}></div>
+      <video
+        ref={videoRef}
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        autoPlay
+        loop
+        muted
+        area-hidden="true"
+        playsInline
+      >
+        <source src="./bgvideo.webm" type="video/webm"></source>
+      </video>
+    </div>
+  );
+}
 
-//   useEffect(() => {
-//     if (!vantaEffect) {
-//       setVantaEffect(
-//         NET({
-//           THREE,
-//           el: vantaRef.current,
-//           mouseControls: true,
-//           touchControls: true,
-//           gyroControls: false,
-//           minHeight: 200.0,
-//           minWidth: 200.0,
-//           scale: 1.0,
-//           scaleMobile: 1.0,
-//           // color: "#5e4eae",
-//           // // backgroundColor: "0x#090447",
-//           color1: 0xabadcd,
-//           color2: 0xded7d2,
-//           // backgroundColor: 0x161515,
-//           points: 4.0,
-//           spacing: 13.0,
-//         })
-//       );
-//     }
-//     return () => {
-//       if (vantaEffect) vantaEffect.destroy();
-//     };
-//   }, [vantaEffect]);
-
-//   return <div ref={vantaRef}>{children}</div>;
-// }
+export default Background;

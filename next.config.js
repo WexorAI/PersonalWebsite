@@ -6,8 +6,7 @@ const nextConfig = {
   },
   webpack: (config) => {
     config.module.rules.push({
-      test: /\.webm$/,
-      use: {
+test: /\.(mp4|webm|ogg)$/i,      use: {
         loader: 'file-loader',
         options: {
           publicPath: '/_next/static/videos',

@@ -15,7 +15,7 @@ function Header() {
             alt="Login Image"
             width={90}
             height={90}
-            style={{ borderRadius: "25%" }}
+            style={{ borderRadius: "25%", zIndex:1 }}
           />
           {/* <div id="contain">
             <Link href={"/login"}>

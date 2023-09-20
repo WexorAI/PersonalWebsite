@@ -30,7 +30,7 @@ function comingSoon() {
               <a class="button2">CONTACT US</a>
             </Link>
             <Image
-              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/rocket.png"
+              src="./rocket.png"
               alt="Login Image"
               width={150}
               height={250}

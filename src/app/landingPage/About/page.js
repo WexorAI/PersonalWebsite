@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../app/components/Variants";
 import Image from "next/image";
+import Link from "next/link";
 
 function About() {
   const [ref, inView] = useInView({
@@ -23,7 +24,7 @@ function About() {
             className="hidden lg:flex   flex-1  bg-contain bg-no-repeat h-[640px] max-w-[320px] lg:max-w-[482px] mix-blend-lighten bg-top "
           >
             <Image
-              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/chatingwomen.png"
+              src="./chatingwomen.png"
               alt="Login Image"
               width={800}
               height={750}
@@ -89,9 +90,9 @@ function About() {
             </div> */}
             <div className="flex gap-x-8 items-center ">
               {/* <button className="btn btn-lg">Contact Us</button> */}
-              <a href="/contactMe" className="text-gradient btn-link">
-                OUR PORTFOLIO
-              </a>
+              <Link href="/comingSoon">
+                <div className="text-gradient btn-link">OUR PORTFOLIO</div>
+              </Link>
             </div>
           </motion.div>
         </div>
