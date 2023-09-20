@@ -192,17 +192,29 @@ button.button2 {
   text-align: center;
   transition: all 0.15s;
 }
-button.button2:hover {
-  color: #dddddd;
-  border-color: #dddddd;
+button.desctopview {
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #ffffff;
+  margin: 0 0.9em 0.9em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background-color: transparent;
+  text-align: center;
+  transition: all 0.15s;
 }
-button.button2:active {
-  color: #bbbbbb;
-  border-color: #bbbbbb;
-}
-@media all and (max-width: 30em) {
-  button.button2 {
-    display: block;
-    margin: 0.4em auto;
+
+/* Media query for mobile view */
+@media (max-width: 500px) {
+  button.desctopview {
+    display: none; /* Hide the desktop button */
+  }
+
+  .mobile-button {
+    display: block; /* Display the mobile button */
   }
 }

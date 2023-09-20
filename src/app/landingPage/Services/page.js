@@ -40,7 +40,6 @@ function Services() {
     <section
       className="section"
       id="services"
-      style={{ backgroundColor: "#11173d" }}
     >
       <div className="container mx-auto">
         <div className="side flex flex-col lg:flex-row ">
@@ -63,7 +62,7 @@ function Services() {
               explore the wide range of solutions we offer to help your business
               thrive:
             </p>
-            <span className="border-b border-white/20 flex" />
+            {/* <span className="border-b border-white/20 flex" /> */}
 
             {/* <a href="#">download app</a> */}
             {/* <Link href={"/login"}>
@@ -84,7 +83,7 @@ function Services() {
                 const { name, description, link } = services;
                 return (
                   <div
-                    className="border-b border-white/20 h-[146px] mb-[38px] flex  "
+                    className="border-b border-white/20  mb-[38px] flex  "
                     key={index}
                   >
                     <div className="max-w-[476px]">

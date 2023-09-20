@@ -14,10 +14,10 @@ function Banner() {
       className="min-h-[85vh] lg:min-h-[78vh] flex items-center "
       id="home"
     >
-      <div className="container mx-auto" style={{ zIndex: 3 }}>
+      <div className="container mx-auto" style={{ zIndex: 2}} >
         <div className=" flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           {/* text */}
-          <div className="flex-1 text-center font-secondary lg:text-left ">
+          <div className="flex-1 text-center font-secondary lg:text-left z-0" >
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
@@ -60,7 +60,7 @@ function Banner() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 mx-w-lg mx-auto lg:max-0"
+              className="mb-4 mx-w-lg mx-auto lg:max-0"
             >
               At WexorAI, we are dedicated to creating inventive solutions that
               harness the power of the latest technologies to transform your
@@ -73,7 +73,7 @@ function Banner() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
+              className="flex max-w-max gap-x-6 items-center mb-8 mx-auto lg:mx-0"
             >
               <Link href="/contactus">
                 <button className="btn btn-lg">contact Us</button>
@@ -90,6 +90,7 @@ function Banner() {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
+              
             >
               <a href="https://www.linkedin.com/company/wexorai/">
                 <FaLinkedin />

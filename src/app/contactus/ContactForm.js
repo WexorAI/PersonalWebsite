@@ -20,22 +20,24 @@ function ContactForm() {
         client_id: "wexorai",
         name: formData.name,
         email: formData.email,
-        subject: "nothing",
         message: formData.message,
       })
       .then(function (response) {
         if (response.data.status) {
           // Email sent successfully, you can show a success message here.
           alert("Email sent successfully!");
+          window.location.reload();
         } else {
           // Handle errors here if the email failed to send.
           alert("Error sending the email. Please try again later.");
+          window.location.reload();
         }
       })
       .catch(function (error) {
         // Handle network or other errors here.
         console.error("Error:", error);
         alert("Error sending the email. Please try again later.");
+        window.location.reload();
       });
   };
 
@@ -79,9 +81,8 @@ function ContactForm() {
       <div>
         <div>
           <Link legacyBehavior href="/">
-            <button className="button2">🡨 BACK to home</button>
+            <button className="desctopview">🡨 BACK</button>
           </Link>
-
           <button type="submit" className="button2">
             Send
           </button>

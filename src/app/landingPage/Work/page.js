@@ -31,7 +31,7 @@ function Work() {
                 how we've transformed ideas into digital reality
               </p>
               <Link href="/comingSoon">
-                <button className=" btn btn-sm">see Our website</button>
+                <button className=" btn btn-sm">see Our works</button>
               </Link>
             </div>
             {/* image one */}

@@ -16,7 +16,7 @@ function comingSoon() {
       <div class="containerr">
         <div class="wrapperr">
           <div class="contentt">
-            <h1>We're Coming Soon</h1>
+            <h1>Coming Soon</h1>
             <p>
               Perfect and awesome to present your future product or service.{" "}
               <br />
