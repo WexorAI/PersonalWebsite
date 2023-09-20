@@ -19,6 +19,20 @@ export const metadata = {
   },
 };
 export default function Home() {
+  // useEffect(() => {
+  //   const threeScript = document.createElement("script");
+  //   threeScript.setAttribute("id", "threeScript");
+  //   threeScript.setAttribute(
+  //     "src",
+  //     "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
+  //   );
+  //   document.getElementsByTagName("head")[0].appendChild(threeScript);
+  //   return () => {
+  //     if (threeScript) {
+  //       threeScript.remove();
+  //     }
+  //   };
+  // }, []);
   return (
     <div
       style={{ backgroundColor: "#0d1145" }}
