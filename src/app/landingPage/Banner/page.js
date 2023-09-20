@@ -14,9 +14,7 @@ function Banner() {
       className="min-h-[85vh] lg:min-h-[78vh] flex items-center "
       id="home"
     >
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-      <div className="container mx-auto">
+      <div className="container mx-auto" style={{ zIndex: 3 }}>
         <div className=" flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           {/* text */}
           <div className="flex-1 text-center font-secondary lg:text-left ">
@@ -96,10 +94,10 @@ function Banner() {
               <a href="https://www.linkedin.com/company/wexorai/">
                 <FaLinkedin />
               </a>
-              <a href="/instagram">
+              <a href="https://www.instagram.com/wexorai/">
                 <FaInstagram />
               </a>
-              <a href="/facebook">
+              <a href="https://www.facebook.com/people/Wexorai/61550830745032/?mibextid=9R9pXO">
                 <FaFacebook />
               </a>
             </motion.div>
@@ -113,7 +111,7 @@ function Banner() {
             style={{ borderRadius: "600px", overflow: "hidden" }}
           >
             <Image
-              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/BANNERIMAGE.png"
+              src="./BANNERIMAGE.png"
               alt="Login Image"
               width={800}
               height={750}

@@ -11,11 +11,11 @@ function Header() {
           {/* <a href="/landingPage"> */}
 
           <Image
-            src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/wexorLogo.jpg"
+            src="./wexorLogo.jpg"
             alt="Login Image"
             width={90}
             height={90}
-            style={{ borderRadius: "25%" }}
+            style={{ borderRadius: "25%", zIndex:1 }}
           />
           {/* <div id="contain">
             <Link href={"/login"}>

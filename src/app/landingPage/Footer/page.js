@@ -84,7 +84,7 @@ function Footer() {
                 <div className="footer-widget">
                   <div className="footer-logo">
                     <Image
-                      src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/wexorwhiteimg.jpg"
+                      src="./wexorwhiteimg.jpg"
                       alt="Login Image"
                       width={800}
                       height={750}
@@ -105,12 +105,12 @@ function Footer() {
                       <a href="https://www.linkedin.com/company/wexorai/">
                         <FaLinkedin />
                       </a>
-                      <a href="/instagram">
-                        <FaInstagram />
-                      </a>
-                      <a href="/facebook">
-                        <FaFacebook />
-                      </a>
+                      <a href="https://www.instagram.com/wexorai/">
+                <FaInstagram />
+              </a>
+              <a href="https://www.facebook.com/people/Wexorai/61550830745032/?mibextid=9R9pXO">
+                <FaFacebook />
+              </a>
                     </div>{" "}
                   </div>
                 </div>

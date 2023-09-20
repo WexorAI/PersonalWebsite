@@ -128,7 +128,7 @@ function Chatbot() {
             }}
           >
             <Image
-              src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/chatIcon.png"
+              src="./chatIcon.png"
               alt="Login Image"
               width={50}
               height={50}
@@ -188,7 +188,7 @@ function Chatbot() {
         </div>
       </div>
       <Image
-        src="https://raw.githubusercontent.com/WexorAI/PersonalWebsite/main/public/chatIcon.png"
+        src="./chatIcon.png"
         alt="Login Image"
         width={90}
         height={90}

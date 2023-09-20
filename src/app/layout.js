@@ -19,7 +19,8 @@ export const metadata = {
     index: false,
     follow:true,
     nocache:true,
-  }
+  },
+  keywords:["wexor","wexorAI","wexorAI website","AI automation in Calicut","software development in Calicut","AI automation in Kerala","software development in Kerala","AI automation in Kottakkal","software development in Kottakkal","wexorai contactus page","wexorai login page","wexor ai register page",]
 };
 
 export default function RootLayout({ children }) {
@@ -58,7 +59,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className="text-white font-secondary text-lg leading-8">
         {children}
-
         <script
           src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
           integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
