@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../../app/components/Variants";
 import Link from "next/link";
 import Image from "next/image";
-
 function Banner() {
   return (
     <section
@@ -19,20 +18,20 @@ function Banner() {
           {/* text */}
           <div className="flex-1 text-center font-secondary lg:text-left z-0" >
             <motion.h1
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.4 }}
               className=" text-[55px] font-bold leading-[0.8] lg:text-[110px]"
             >
               Wexor
               <span>AI</span>
             </motion.h1>
             <motion.div
-              variants={fadeIn("up", 0.4)}
+              variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.5 }}
               className="mb-6 text-[36px] lg:text-[30px] font-secondary font-semibold uppercase leading-[1] "
             >
               <span className="text-white mr-4">Our Services</span>
@@ -56,10 +55,10 @@ function Banner() {
               />
             </motion.div>
             <motion.p
-              variants={fadeIn("up", 0.5)}
+              variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.5 }}
               className="mb-4 mx-w-lg mx-auto lg:max-0"
             >
               At WexorAI, we are dedicated to creating inventive solutions that
@@ -69,10 +68,10 @@ function Banner() {
               requirements.
             </motion.p>
             <motion.div
-              variants={fadeIn("up", 0.6)}
+              variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.5 }}
               className="flex max-w-max gap-x-6 items-center mb-8 mx-auto lg:mx-0"
             >
               <Link href="/contactus">
@@ -85,10 +84,10 @@ function Banner() {
             </motion.div>
             {/* social media icons */}
             <motion.div
-              variants={fadeIn("up", 0.7)}
+              variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.5 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
               
             >
@@ -105,7 +104,7 @@ function Banner() {
           </div>
           {/* image */}
           <motion.div
-            variants={fadeIn("down", 0.5)}
+            variants={fadeIn("down", 0.3)}
             initial="hidden"
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] "
