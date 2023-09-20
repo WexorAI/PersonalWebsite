@@ -5,7 +5,7 @@ import styles from "./Header.css";
 
 function Header() {
   return (
-    <div className=" py-8">
+    <div className="min-h-[15vh] lg:min-h-[22vh] py-4">
       <div className=" container mx-aut">
         <div className="flex justify-between items-center">
           {/* <a href="/landingPage"> */}

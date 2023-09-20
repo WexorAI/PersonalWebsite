@@ -12,7 +12,7 @@ function About() {
     threshold: 0.5,
   });
   return (
-    <section className="section" id="about" ref={ref}>
+    <section className="section " id="about" ref={ref} style={{top:"0"}}>
       <div className="container mx-auto">
         <div className=" flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0  ">
           {/* img */}

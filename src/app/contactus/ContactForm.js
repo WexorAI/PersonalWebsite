@@ -79,7 +79,7 @@ function ContactForm() {
       <div>
         <div>
           <Link legacyBehavior href="/">
-            <button className="button2">🡨 BACK to home</button>
+            <button className="button2">🡨 BACK</button>
           </Link>
 
           <button type="submit" className="button2">
