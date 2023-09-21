@@ -89,6 +89,7 @@ function Footer() {
                       width={800}
                       height={750}
                       style={{ borderRadius: "10px" }}
+                      loading="lazy"
                     />
                   </div>
                   <div className="footer-text">

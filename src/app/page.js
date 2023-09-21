@@ -17,9 +17,13 @@ export const metadata = {
     canonical: `/`,
   },
 };
-const Banner = dynamic(() => import('./landingPage/Banner/page'))
-const Chatbot = dynamic(() => import('./ChatBot/page'))
-
+const Banner = dynamic(() => import("./landingPage/Banner/page"));
+const Chatbot = dynamic(
+  () => import('./ChatBot/page'),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+)
 export default function Home() {
   return (
     <div
@@ -27,7 +31,7 @@ export default function Home() {
       className="bg-site bg-no-repeat
         bg-cover overflow-hidden"
     >
-      <Background   />
+      <Background />
       <Header />
       <Banner />
       {/* <NavBar /> */}

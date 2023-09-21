@@ -115,6 +115,7 @@ function Banner() {
               alt="Login Image"
               width={800}
               height={750}
+              loading="lazy"
             />
           </motion.div>
         </div>

@@ -42,6 +42,7 @@ function Work() {
                 src="./work.jpg"
                 alt="Login Image"
                 width={800}
+                loading="lazy"
                 height={750}
                 className="group-hover:scale-125 transition-all duration-500"
               />
@@ -71,6 +72,7 @@ function Work() {
                 alt="Login Image"
                 width={800}
                 height={750}
+                loading="lazy"
                 className="group-hover:scale-125 transition-all duration-500"
               />
               {/* pretitle */}
@@ -92,6 +94,7 @@ function Work() {
                 alt="Login Image"
                 width={800}
                 height={750}
+                loading="lazy"
                 className="group-hover:scale-125 transition-all duration-500"
               />
               {/* pretitle */}

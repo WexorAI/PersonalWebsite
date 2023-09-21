@@ -132,6 +132,7 @@ function Chatbot() {
               alt="Login Image"
               width={50}
               height={50}
+              loading="lazy"
             />
           </div>
           <div className="text-center fw-bold mx-3 mb-0">
@@ -193,6 +194,7 @@ function Chatbot() {
         width={90}
         height={90}
         type="button"
+        loading="lazy"
         className="collapsible "
         onClick={toggleCollapsible}
       />
