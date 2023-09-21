@@ -1,15 +1,14 @@
+import dynamic from "next/dynamic";
 import styles from "../app/landingPage/landingPage.css";
-import Chatbot from "./ChatBot/page";
+// import Chatbot from "./ChatBot/page";
 import Background from "./components/Background";
 import About from "./landingPage/About/page";
-import Banner from "./landingPage/Banner/page";
+// import Banner from "./landingPage/Banner/page";
 import Footer from "./landingPage/Footer/page";
 import Header from "./landingPage/Header/page";
 import Services from "./landingPage/Services/page";
 import Work from "./landingPage/Work/page";
 import React from "react";
-
-// import bg from "../../public/leadspace.png";
 export const metadata = {
   title: "Home page",
   description:
@@ -18,6 +17,9 @@ export const metadata = {
     canonical: `/`,
   },
 };
+const Banner = dynamic(() => import('./landingPage/Banner/page'))
+const Chatbot = dynamic(() => import('./ChatBot/page'))
+
 export default function Home() {
   return (
     <div
@@ -25,7 +27,7 @@ export default function Home() {
       className="bg-site bg-no-repeat
         bg-cover overflow-hidden"
     >
-      <Background  />
+      <Background   />
       <Header />
       <Banner />
       {/* <NavBar /> */}

@@ -12,7 +12,7 @@ function Work() {
       <div className="container max-auto">
         <div className=" flex flex-col lg:flex-row gap-x-10 ">
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.1 }}
