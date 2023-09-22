@@ -82,10 +82,10 @@ function Services() {
                 // destructurning serviceess
                 const { name, description, link } = services;
                 return (
-                  <div
-                    className="border-b border-white/20  mb-[38px] flex  "
-                    key={index}
-                  >
+                  // <div
+                  //   className="border-b border-white/20  mb-[38px] flex  "
+                  //   key={index}
+                  // >
                     <div className="max-w-[476px]">
                       <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6  ">
                         {name}
@@ -97,7 +97,7 @@ function Services() {
                         {description}
                       </p>
                     </div>
-                  </div>
+                  // </div>
                 );
               })}
             </div>

@@ -2,13 +2,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../app/components/Variants";
+import styles from "./Work.css";
 
 import Image from "next/image";
 import Link from "next/link";
 
 function Work() {
   return (
-    <section className="section flex items-center " id="work">
+    <section className="section flex items-center " id="work" style={{backgroundColor:"#1a144f"}}>
       <div className="container max-auto">
         <div className=" flex flex-col lg:flex-row gap-x-10 ">
           <motion.div
@@ -16,7 +17,7 @@ function Work() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.1 }}
-            className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
+            className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-6 pb-6"
           >
             {/* text */}
             <div>
@@ -25,7 +26,7 @@ function Work() {
                 Our Latest <br />
                 work
               </h2>
-              <p className=" max-w-sm mb-16">
+              <p className=" max-w-sm mb-10">
                 Empower your business with our AI-powered chatbots for 24/7
                 support and customer satisfaction. Explore our portfolio to see
                 how we've transformed ideas into digital reality

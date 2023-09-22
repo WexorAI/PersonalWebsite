@@ -2,7 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.section{
+  background: rgb(70,22,121);
+  background: radial-gradient(circle, rgb(56 8 108 / 81%) 33%, rgb(7 7 37 / 68%) 100%);}
 .btn {
   background: linear-gradient(
     92.23deg,
