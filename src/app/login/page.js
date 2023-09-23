@@ -140,6 +140,7 @@ function Login() {
           src="./ABOUTIMAGE.png"
           alt="Login Image"
           width={800}
+          loading="lazy"
           height={800}
         />
       </motion.div>

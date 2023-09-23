@@ -6,13 +6,14 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../../app/components/Variants";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./About.css";
 
 function About() {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
   return (
-    <section className="section " id="about" ref={ref} style={{top:"0"}}>
+    <section className="section " id="about" ref={ref} style={{top:"0",backgroundColor:"#08014d"}}>
       <div className="container mx-auto">
         <div className=" flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0  ">
           {/* img */}
@@ -28,6 +29,7 @@ function About() {
               alt="Login Image"
               width={800}
               height={750}
+              loading="lazy"
             />
           </motion.div>
 

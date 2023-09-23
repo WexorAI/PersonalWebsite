@@ -1,3 +1,8 @@
+#services{
+  background: rgb(4,4,4);
+  background: linear-gradient(0deg, rgba(4,4,4,0.8576680672268908) 0%, rgb(51 31 124) 100%)
+  
+}
 .side > div span {
   text-transform: uppercase;
   letter-spacing: 1.5px;

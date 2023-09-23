@@ -34,6 +34,7 @@ function comingSoon() {
               alt="Login Image"
               width={150}
               height={250}
+              loading="lazy"
               className="rocket"
             />
           </div>

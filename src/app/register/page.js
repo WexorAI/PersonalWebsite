@@ -236,7 +236,7 @@ function register() {
           style={{ backgroundColor: "#090447" }}
           className="col-lg-6 col-md-7 "
         >
-          <Image src="./133.png" alt="Login Image" width={800} height={750} />
+          <Image src="./133.png" alt="Login Image" loading="lazy" width={800} height={750} />
         </motion.div>
       </div>
     </section>
