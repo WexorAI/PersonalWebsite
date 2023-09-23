@@ -27,7 +27,7 @@ const Chatbot = dynamic(
 export default function Home() {
   return (
     <div
-      style={{ backgroundColor: "#0d1145" }}
+      style={{ backgroundColor: "#000000" }}
       className="bg-site bg-no-repeat
         bg-cover overflow-hidden"
     >
