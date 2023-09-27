@@ -5,6 +5,7 @@ import "./ChatBot.css"; // Make sure to adjust the path to your CSS file
 import { Button } from "antd";
 import { title } from "process";
 import Image from "next/image";
+import { Link } from "react-scroll";
 
 function Chatbot() {
   const [botMessage, setBotMessage] = useState("Loading...");
@@ -115,7 +116,7 @@ function Chatbot() {
     <div className="chat-bar-collapsible ">
       <div className={`content ${isActive ? "active" : ""}`}>
         {/* header */}
-        <div className="chatbot-header  text-center">
+        {/* <div className="chatbot-header  text-center">
           <div className="h5">
             Hi <span>USER</span>
           </div>
@@ -138,7 +139,42 @@ function Chatbot() {
           <div className="text-center fw-bold mx-3 mb-0">
             Our bot answers instantly
           </div>
-        </div>
+        </div> */}
+        {/* <div className="navbar-brand  "> */}
+        <div
+          style={{
+            marginRight: "35px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div>
+            <Image
+              src="./WexorBlackDots.png"
+              alt="Login Image"
+              width={40}
+              height={30}
+              loading="lazy"
+              style={{
+                // borderRadius: "25%",
+                zIndex: 1,
+                // marginBottom: "8px ",
+              }}
+            />
+          </div>
+          <h3
+            style={{
+              marginLeft: "10px",
+              fontSize: "15px",
+              fontWeight: "bold",
+              color: "white",
+            }}
+          >
+            WexorAI
+          </h3>
+        </div>{" "}
+        {/* </div> */}
         <div />
         <div className="full-chat-block">
           <div className="outer-container">
@@ -191,8 +227,8 @@ function Chatbot() {
       <Image
         src="./chatIcon.png"
         alt="Login Image"
-        width={90}
-        height={90}
+        width={140}
+        height={112}
         type="button"
         loading="lazy"
         className="collapsible "

@@ -1,7 +1,24 @@
 import React from "react";
-import Head from "next/head";
-import Script from "next/script";
 import Link from "next/link";
+import Image from "next/image";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaLinkedin,
+  FaCode,
+  FaLaptopCode,
+  FaRobot,
+  FaMobileAlt,
+  FaTwitter,
+  FaYoutube,
+  FaCheck,
+  FaUsers,
+  FaHome,
+  FaQuoteLeft,
+} from "react-icons/fa";
+import Chatbot from "./ChatBot/page";
+// import Chatbot from "./ChatBot/page";
+
 export const metadata = {
   title: "Home page",
   description:
@@ -32,11 +49,34 @@ export default function Home() {
           <div className="container-fluid sticky-top">
             <div className="container">
               <nav className="navbar navbar-expand-lg navbar-dark p-0">
-                <a href="index.html" className="navbar-brand">
-                  <h1 className="text-white">
-                    AI<span className="text-dark">.</span>Tech
-                  </h1>
-                </a>
+                <Link href="/" className="navbar-brand">
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <div>
+                      <Image
+                        src="./WexorBlackDots.png"
+                        alt="Login Image"
+                        width={50}
+                        height={40}
+                        loading="lazy"
+                        style={{
+                          borderRadius: "25%",
+                          zIndex: 1,
+                          marginBottom: "8px ",
+                        }}
+                      />
+                    </div>
+                    <h1
+                      style={{
+                        marginLeft: "10px",
+                        fontSize: "24px",
+                        fontWeight: "bold",
+                        color: "white",
+                      }}
+                    >
+                      WexorAI
+                    </h1>
+                  </div>{" "}
+                </Link>
                 <button
                   type="button"
                   className="navbar-toggler ms-auto me-0"
@@ -56,9 +96,6 @@ export default function Home() {
                     <Link href="Service" className="nav-item nav-link">
                       Services
                     </Link>
-                    <Link href="Team" className="nav-item nav-link">
-                      Our Team
-                    </Link>
                     <Link href="Contact" className="nav-item nav-link">
                       Contact
                     </Link>{" "}
@@ -74,28 +111,28 @@ export default function Home() {
               <div className="row g-5 pt-5">
                 <div className="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
                   <div className="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">
-                    AI.Tech
+                    Wexor.AI
                   </div>
                   <h1 className="display-4 text-white mb-4 animated slideInRight">
-                    Artificial Intelligence for Your Business
+                    Welcome to the future of AI-powered business automation{" "}
                   </h1>
                   <p className="text-white mb-4 animated slideInRight">
-                    Tempor rebum no at dolore lorem clita rebum rebum ipsum
-                    rebum stet dolor sed justo kasd. Ut dolor sed magna dolor
-                    sea diam. Sit diam sit
+                    Welcome to Wexor.AI, where AI meets business automation.
+                    Explore the future of streamlined operations, enhanced
+                    efficiency, and unprecedented growth with us
                   </p>
-                  <a
-                    href=""
+                  <Link
+                    href="About"
                     className="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight"
                   >
                     Read More
-                  </a>
-                  <a
-                    href=""
+                  </Link>
+                  <Link
+                    href="Contact"
                     className="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-lg-6 align-self-end text-center text-lg-end">
                   <img className="img-fluid" src="img/hero-img.png" alt="" />
@@ -146,71 +183,76 @@ export default function Home() {
                 </div>
                 <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                   <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">
-                    About Us
+                    <Link href="About">About Us</Link>
                   </div>
                   <h1 className="mb-4">
                     We Make Your Business Smarter with Artificial Intelligence
                   </h1>
                   <p className="mb-4">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                    tempor sit. Aliqu diam amet diam et eos labore. Clita erat
-                    ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                    clita duo justo et tempor eirmod magna dolore erat amet
+                    Your Technological Transformation Partner!... At WexorAI,
+                    our passion lies in revolutionizing businesses through
+                    advanced technology. We specialize in creating chatbots and
+                    implementing AI automation to optimize operations and
+                    elevate customer experiences. Our team of experts is
+                    well-versed in web development, software solutions, and app
+                    development, catering to all your digital requirements.
                   </p>
                   <p className="mb-4">
-                    Aliqu diam amet diam et eos labore. Clita erat ipsum et
-                    lorem et sit, sed stet no labore lorem sit. Sanctus clita
-                    duo justo et tempor.
+                    Supercharge your business with our AI-powered chatbots,
+                    ensuring round-the-clock support and significantly enhancing
+                    customer satisfaction. Embrace automation to skyrocket
+                    efficiency, reduce errors, and lead the way in digital
+                    transformation with WexorAI.{" "}
                   </p>
                   <div className="row g-3">
                     <div className="col-sm-6">
                       <h6 className="mb-3">
-                        <i className="fa fa-check text-primary me-2" />
+                        <FaCheck color="#1363c6" />
                         Award Winning
                       </h6>
                       <h6 className="mb-0">
-                        <i className="fa fa-check text-primary me-2" />
+                        <FaCheck color="#1363c6" />
                         Professional Staff
                       </h6>
                     </div>
                     <div className="col-sm-6">
                       <h6 className="mb-3">
-                        <i className="fa fa-check text-primary me-2" />
-                        24/7 Support
+                        <FaCheck color="#1363c6" />
+                        24/7 AI Support
                       </h6>
                       <h6 className="mb-0">
-                        <i className="fa fa-check text-primary me-2" />
+                        <FaCheck color="#1363c6" />
                         Fair Prices
                       </h6>
                     </div>
                   </div>
                   <div className="d-flex align-items-center mt-4">
-                    <a
+                    <Link
                       className="btn btn-primary rounded-pill px-4 me-3"
-                      href=""
+                      href="About"
                     >
                       Read More
+                    </Link>
+                    <a
+                      className="btn btn-outline-primary btn-square me-3"
+                      href=""
+                    >
+                      <FaFacebook />
                     </a>
                     <a
                       className="btn btn-outline-primary btn-square me-3"
                       href=""
                     >
-                      <i className="fab fa-facebook-f" />
+                      <FaTwitter />
                     </a>
                     <a
                       className="btn btn-outline-primary btn-square me-3"
                       href=""
                     >
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a
-                      className="btn btn-outline-primary btn-square me-3"
-                      href=""
-                    >
-                      <i className="fab fa-instagram" />
+                      <FaInstagram />
                     </a>
                     <a className="btn btn-outline-primary btn-square" href="">
-                      <i className="fab fa-linkedin-in" />
+                      <FaLinkedin />
                     </a>
                   </div>
                 </div>
@@ -230,14 +272,18 @@ export default function Home() {
                     Our Excellent AI Solutions for Your Business
                   </h1>
                   <p className="mb-4">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                    tempor sit. Aliqu diam amet diam et eos labore. Clita erat
-                    ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                    clita duo justo et tempor eirmod magna dolore erat amet
+                    Welcome to WexorAI,the leading provider of cutting-edge
+                    technology solutions. Our expertise lies in delivering
+                    innovative services that empower your business to excel in
+                    the digital age. You can explore the wide range of solutions
+                    we offer to help your business thrive:
                   </p>
-                  <a className="btn btn-primary rounded-pill px-4" href="">
+                  <Link
+                    className="btn btn-primary rounded-pill px-4"
+                    href="Service"
+                  >
                     Read More
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-lg-7">
                   <div className="row g-4">
@@ -249,16 +295,18 @@ export default function Home() {
                         >
                           <div className="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div className="service-icon btn-square">
-                              <i className="fa fa-robot fa-2x" />
+                              <FaCode size={40} color="#1363c6" />{" "}
                             </div>
-                            <h5 className="mb-3">Robotic Automation</h5>
+                            <h5 className="mb-3">Web Development:</h5>
                             <p>
-                              Erat ipsum justo amet duo et elitr dolor, est duo
-                              duo eos lorem sed diam stet diam sed stet lorem.
+                              Our web team excels in crafting visually
+                              captivating, functional websites, tailored to your
+                              unique business needs. Find your perfect online
+                              brand representation with us.
                             </p>
-                            <a className="btn px-3 mt-auto mx-auto" href="">
+                            {/* <a className="btn px-3 mt-auto mx-auto" href="">
                               Read More
-                            </a>
+                            </a> */}
                           </div>
                         </div>
                         <div
@@ -267,16 +315,18 @@ export default function Home() {
                         >
                           <div className="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div className="service-icon btn-square">
-                              <i className="fa fa-power-off fa-2x" />
+                              <FaLaptopCode size={40} color="#1363c6" />{" "}
                             </div>
-                            <h5 className="mb-3">Machine learning</h5>
+                            <h5 className="mb-3">Software Development:</h5>
                             <p>
-                              Erat ipsum justo amet duo et elitr dolor, est duo
-                              duo eos lorem sed diam stet diam sed stet lorem.
+                              Unleash your organization's potential with our
+                              expert software development. Specializing in
+                              scalable, efficient solutions tailored to your
+                              needs, we ensure seamless business operations.
                             </p>
-                            <a className="btn px-3 mt-auto mx-auto" href="">
+                            {/* <a className="btn px-3 mt-auto mx-auto" href="">
                               Read More
-                            </a>
+                            </a> */}
                           </div>
                         </div>
                       </div>
@@ -289,16 +339,20 @@ export default function Home() {
                         >
                           <div className="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div className="service-icon btn-square">
-                              <i className="fa fa-graduation-cap fa-2x" />
+                              <FaRobot size={40} color="#1363c6" />{" "}
                             </div>
-                            <h5 className="mb-3">Education &amp; Science</h5>
+                            <h5 className="mb-3">
+                              Chatbot &amp; AI Automation:
+                            </h5>
                             <p>
-                              Erat ipsum justo amet duo et elitr dolor, est duo
-                              duo eos lorem sed diam stet diam sed stet lorem.
+                              Elevate customer support and workflow efficiency
+                              with our AI solutions. We offer real-time
+                              assistance, reducing support team workload. Our AI
+                              automation boosts productivity.
                             </p>
-                            <a className="btn px-3 mt-auto mx-auto" href="">
+                            {/* <a className="btn px-3 mt-auto mx-auto" href="">
                               Read More
-                            </a>
+                            </a> */}
                           </div>
                         </div>
                         <div
@@ -307,16 +361,17 @@ export default function Home() {
                         >
                           <div className="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div className="service-icon btn-square">
-                              <i className="fa fa-brain fa-2x" />
+                              <FaMobileAlt size={40} color="#1363c6" />{" "}
                             </div>
-                            <h5 className="mb-3">Predictive Analysis</h5>
+                            <h5 className="mb-3">App Development:</h5>
                             <p>
-                              Erat ipsum justo amet duo et elitr dolor, est duo
-                              duo eos lorem sed diam stet diam sed stet lorem.
+                              Discover user-friendly, feature-rich apps on
+                              Android and iOS , boosting your mobile presence
+                              effectively in this smartphone era.
                             </p>
-                            <a className="btn px-3 mt-auto mx-auto" href="">
+                            {/* <a className="btn px-3 mt-auto mx-auto" href="">
                               Read More
-                            </a>
+                            </a> */}
                           </div>
                         </div>
                       </div>
@@ -339,30 +394,33 @@ export default function Home() {
                     Why Choose Us
                   </div>
                   <h1 className="text-white mb-4">
-                    We're Best in AI Industry with 10 Years of Experience
+                    Your Trusted AI Partner with a Decade of Excellence{" "}
                   </h1>
                   <p className="text-light mb-4">
-                    Aliqu diam amet diam et eos labore. Clita erat ipsum et
-                    lorem et sit, sed stet no labore lorem sit. Sanctus clita
-                    duo justo et tempor
+                    For over a decade, we've been at the forefront of the AI
+                    industry, revolutionizing businesses with cutting-edge
+                    technology and unwavering commitment. Our journey is marked
+                    by dedication, innovation, and excellence.{" "}
                   </p>
                   <div className="d-flex align-items-center text-white mb-3">
                     <div className="btn-sm-square bg-white text-primary rounded-circle me-3">
-                      <i className="fa fa-check" />
+                      <FaCheck color="#1363c6" />
                     </div>
-                    <span>Diam dolor diam ipsum et tempor sit</span>
+                    <span>
+                      Together, we'll create a website that reflects your brand.
+                    </span>
                   </div>
                   <div className="d-flex align-items-center text-white mb-3">
                     <div className="btn-sm-square bg-white text-primary rounded-circle me-3">
-                      <i className="fa fa-check" />
+                      <FaCheck color="#1363c6" />
                     </div>
-                    <span>Diam dolor diam ipsum et tempor sit</span>
+                    <span>Delivering tangible results and ROI</span>
                   </div>
                   <div className="d-flex align-items-center text-white mb-3">
                     <div className="btn-sm-square bg-white text-primary rounded-circle me-3">
-                      <i className="fa fa-check" />
+                      <FaCheck color="#1363c6" />
                     </div>
-                    <span>Diam dolor diam ipsum et tempor sit</span>
+                    <span>Continuously innovate to keep you ahead.</span>
                   </div>
                   <div className="row g-4 pt-3">
                     <div className="col-sm-6">
@@ -370,13 +428,13 @@ export default function Home() {
                         className="d-flex rounded p-3"
                         style={{ background: "rgba(256, 256, 256, 0.1)" }}
                       >
-                        <i className="fa fa-users fa-3x text-white" />
+                        <FaUsers size={60} className="  text-white" />
                         <div className="ms-3">
                           <h2
                             className="text-white mb-0"
                             data-toggle="counter-up"
                           >
-                            9999
+                            89
                           </h2>
                           <p className="text-white mb-0">Happy Clients</p>
                         </div>
@@ -387,13 +445,13 @@ export default function Home() {
                         className="d-flex rounded p-3"
                         style={{ background: "rgba(256, 256, 256, 0.1)" }}
                       >
-                        <i className="fa fa-check fa-3x text-white" />
+                        <FaHome size={60} className=" text-white" />
                         <div className="ms-3">
                           <h2
                             className="text-white mb-0"
                             data-toggle="counter-up"
                           >
-                            9999
+                            50
                           </h2>
                           <p className="text-white mb-0">Project Complete</p>
                         </div>
@@ -500,7 +558,8 @@ export default function Home() {
                           aria-expanded="false"
                           aria-controls="collapseOne"
                         >
-                          How to build a website?
+                          What is AI-automation, and how can it benefit our
+                          business?
                         </button>
                       </h2>
                       <div
@@ -510,9 +569,11 @@ export default function Home() {
                         data-bs-parent="#accordionFAQ1"
                       >
                         <div className="accordion-body">
-                          Dolor nonumy tempor elitr et rebum ipsum sit duo duo.
-                          Diam sed sed magna et magna diam aliquyam amet dolore
-                          ipsum erat duo. Sit rebum magna duo labore no diam.
+                          AI-powered business automation uses artificial
+                          intelligence to streamline operations, increase
+                          efficiency, and reduce manual tasks. It benefits your
+                          business by improving productivity, reducing errors,
+                          and enabling data-driven decision-making{" "}
                         </div>
                       </div>
                     </div>
@@ -529,7 +590,7 @@ export default function Home() {
                           aria-expanded="false"
                           aria-controls="collapseTwo"
                         >
-                          How long will it take to get a new website?
+                          How can AI chatbots enhance my customer support?{" "}
                         </button>
                       </h2>
                       <div
@@ -539,9 +600,11 @@ export default function Home() {
                         data-bs-parent="#accordionFAQ1"
                       >
                         <div className="accordion-body">
-                          Dolor nonumy tempor elitr et rebum ipsum sit duo duo.
-                          Diam sed sed magna et magna diam aliquyam amet dolore
-                          ipsum erat duo. Sit rebum magna duo labore no diam.
+                          AI chatbots provide 24/7 customer support, answer
+                          frequently asked questions, and handle routine
+                          inquiries. They free up your support team to focus on
+                          more complex issues, leading to higher customer
+                          satisfaction.{" "}
                         </div>
                       </div>
                     </div>
@@ -558,7 +621,7 @@ export default function Home() {
                           aria-expanded="false"
                           aria-controls="collapseThree"
                         >
-                          Do you only create HTML websites?
+                          What industries can benefit from AI automation?{" "}
                         </button>
                       </h2>
                       <div
@@ -568,9 +631,10 @@ export default function Home() {
                         data-bs-parent="#accordionFAQ1"
                       >
                         <div className="accordion-body">
-                          Dolor nonumy tempor elitr et rebum ipsum sit duo duo.
-                          Diam sed sed magna et magna diam aliquyam amet dolore
-                          ipsum erat duo. Sit rebum magna duo labore no diam.
+                          AI automation can benefit a wide range of industries,
+                          including healthcare, finance, e-commerce,
+                          manufacturing, and customer service. It's adaptable
+                          and scalable to meet various business needs.{" "}
                         </div>
                       </div>
                     </div>
@@ -587,7 +651,7 @@ export default function Home() {
                           aria-expanded="true"
                           aria-controls="collapseFour"
                         >
-                          Will my website be mobile-friendly?
+                          Are AI solutions expensive to implement?{" "}
                         </button>
                       </h2>
                       <div
@@ -597,9 +661,10 @@ export default function Home() {
                         data-bs-parent="#accordionFAQ1"
                       >
                         <div className="accordion-body">
-                          Dolor nonumy tempor elitr et rebum ipsum sit duo duo.
-                          Diam sed sed magna et magna diam aliquyam amet dolore
-                          ipsum erat duo. Sit rebum magna duo labore no diam.
+                          The cost of implementing AI solutions can vary
+                          depending on your specific requirements. However, AI
+                          automation often leads to long-term cost savings by
+                          reducing labor expenses and increasing efficiency.{" "}
                         </div>
                       </div>
                     </div>
@@ -620,7 +685,8 @@ export default function Home() {
                           aria-expanded="false"
                           aria-controls="collapseFive"
                         >
-                          Will you maintain my site for me?
+                          How long does it take to see results from AI
+                          implementation?{" "}
                         </button>
                       </h2>
                       <div
@@ -630,9 +696,10 @@ export default function Home() {
                         data-bs-parent="#accordionFAQ2"
                       >
                         <div className="accordion-body">
-                          Dolor nonumy tempor elitr et rebum ipsum sit duo duo.
-                          Diam sed sed magna et magna diam aliquyam amet dolore
-                          ipsum erat duo. Sit rebum magna duo labore no diam.
+                          The timeline for seeing results from AI implementation
+                          depends on the complexity of the project and the scope
+                          of automation. Generally, you can expect to see
+                          initial improvements within a few months.{" "}
                         </div>
                       </div>
                     </div>
@@ -649,8 +716,7 @@ export default function Home() {
                           aria-expanded="false"
                           aria-controls="collapseSix"
                         >
-                          I’m on a strict budget. Do you have any low cost
-                          options?
+                          Is my business data safe with AI solutions?{" "}
                         </button>
                       </h2>
                       <div
@@ -660,9 +726,10 @@ export default function Home() {
                         data-bs-parent="#accordionFAQ2"
                       >
                         <div className="accordion-body">
-                          Dolor nonumy tempor elitr et rebum ipsum sit duo duo.
-                          Diam sed sed magna et magna diam aliquyam amet dolore
-                          ipsum erat duo. Sit rebum magna duo labore no diam.
+                          Data security is a top priority. Reputable AI
+                          providers ensure that your data is protected through
+                          encryption, access controls, and compliance with data
+                          privacy regulations.{" "}
                         </div>
                       </div>
                     </div>
@@ -679,7 +746,8 @@ export default function Home() {
                           aria-expanded="false"
                           aria-controls="collapseSeven"
                         >
-                          Will you maintain my site for me?
+                          Can AI solutions be customized to fit my specific
+                          business needs?{" "}
                         </button>
                       </h2>
                       <div
@@ -689,9 +757,10 @@ export default function Home() {
                         data-bs-parent="#accordionFAQ2"
                       >
                         <div className="accordion-body">
-                          Dolor nonumy tempor elitr et rebum ipsum sit duo duo.
-                          Diam sed sed magna et magna diam aliquyam amet dolore
-                          ipsum erat duo. Sit rebum magna duo labore no diam.
+                          Yes, AI solutions can be tailored to your unique
+                          business requirements. Providers like us offer
+                          customized solutions to address your specific
+                          challenges and goals.{" "}
                         </div>
                       </div>
                     </div>
@@ -708,8 +777,7 @@ export default function Home() {
                           aria-expanded="false"
                           aria-controls="collapseEight"
                         >
-                          I’m on a strict budget. Do you have any low cost
-                          options?
+                          What kind of support and maintenance do you provide?{" "}
                         </button>
                       </h2>
                       <div
@@ -719,9 +787,10 @@ export default function Home() {
                         data-bs-parent="#accordionFAQ2"
                       >
                         <div className="accordion-body">
-                          Dolor nonumy tempor elitr et rebum ipsum sit duo duo.
-                          Diam sed sed magna et magna diam aliquyam amet dolore
-                          ipsum erat duo. Sit rebum magna duo labore no diam.
+                          We offer comprehensive support and maintenance
+                          services to ensure your AI solutions run smoothly.
+                          This includes regular updates, troubleshooting, and
+                          technical assistance.{" "}
                         </div>
                       </div>
                     </div>
@@ -732,7 +801,7 @@ export default function Home() {
           </div>
           {/* FAQs Start */}
           {/* Team Start */}
-          <div className="container-fluid bg-light py-5">
+          {/* <div className="container-fluid bg-light py-5">
             <div className="container py-5">
               <div className="row g-5 align-items-center">
                 <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
@@ -741,11 +810,7 @@ export default function Home() {
                   </div>
                   <h1 className="mb-4">Meet Our Experienced Team Members</h1>
                   <p className="mb-4">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                    tempor sit. Aliqu diam amet diam et eos labore. Clita erat
-                    ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                    clita duo justo et tempor eirmod magna dolore erat amet
-                  </p>
+                  At WexorAI, our team is the driving force behind our success. We've assembled a group of highly skilled and passionate individuals who are dedicated to delivering exceptional results for our clients. Get to know the faces behind the innovation:                  </p>
                   <a className="btn btn-primary rounded-pill px-4" href="">
                     Read More
                   </a>
@@ -753,6 +818,7 @@ export default function Home() {
                 <div className="col-lg-7">
                   <div className="row g-4">
                     <div className="col-md-6">
+
                       <div className="row g-4">
                         <div
                           className="col-12 wow fadeIn"
@@ -764,7 +830,7 @@ export default function Home() {
                               src="img/team-1.jpg"
                               alt=""
                             />
-                            <h5 className="mb-0">Boris Johnson</h5>
+                            <h5 className="mb-0">Shihar</h5>
                             <small>Founder &amp; CEO</small>
                             <div className="d-flex justify-content-center mt-3">
                               <a
@@ -804,8 +870,8 @@ export default function Home() {
                               src="img/team-2.jpg"
                               alt=""
                             />
-                            <h5 className="mb-0">Adam Crew</h5>
-                            <small>Executive Manager</small>
+                            <h5 className="mb-0">Rashid</h5>
+                            <small>Co-founder</small>
                             <div className="d-flex justify-content-center mt-3">
                               <a
                                 className="btn btn-square btn-primary m-1"
@@ -835,6 +901,7 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
+                      
                     </div>
                     <div className="col-md-6 pt-md-4">
                       <div className="row g-4">
@@ -924,7 +991,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* Team End */}
           {/* Testimonial Start */}
           <div className="container-xxl py-5">
@@ -948,7 +1015,7 @@ export default function Home() {
                 <div className="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
                   <div className="owl-carousel testimonial-carousel border-start border-primary">
                     <div className="testimonial-item ps-5">
-                      <i className="fa fa-quote-left fa-2x text-primary mb-3" />
+                      <FaQuoteLeft size={32} className="text-primary mb-3" />{" "}
                       <p className="fs-4">
                         Aliqu diam amet diam et eos labore. Clita erat ipsum et
                         lorem et sit, sed stet no labore lorem sit. Sanctus
@@ -967,7 +1034,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="testimonial-item ps-5">
-                      <i className="fa fa-quote-left fa-2x text-primary mb-3" />
+                      <FaQuoteLeft size={32} className="text-primary mb-3" />
                       <p className="fs-4">
                         Aliqu diam amet diam et eos labore. Clita erat ipsum et
                         lorem et sit, sed stet no labore lorem sit. Sanctus
@@ -986,7 +1053,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="testimonial-item ps-5">
-                      <i className="fa fa-quote-left fa-2x text-primary mb-3" />
+                      <FaQuoteLeft size={32} className="text-primary mb-3" />
                       <p className="fs-4">
                         Aliqu diam amet diam et eos labore. Clita erat ipsum et
                         lorem et sit, sed stet no labore lorem sit. Sanctus
@@ -1045,7 +1112,8 @@ export default function Home() {
                     </button>
                   </div>
                   <small className="text-white-50">
-                    Diam sed sed dolor stet amet eirmod
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
                   </small>
                 </div>
               </div>
@@ -1061,15 +1129,13 @@ export default function Home() {
                   data-wow-delay="0.1s"
                 >
                   <a href="index.html" className="d-inline-block mb-3">
-                    <h1 className="text-white">
-                      AI<span className="text-primary">.</span>Tech
-                    </h1>
+                    <h1 className="text-white">WexorAI</h1>
                   </a>
                   <p className="mb-0">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                    tempor sit. Aliqu diam amet diam et eos labore. Clita erat
-                    ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                    clita duo justo et tempor
+                    Ready to take your business to the next level? Contact us
+                    today. We're passionate about crafting innovative solutions
+                    that leverage cutting-edge technologies to bring your ideas
+                    to life{" "}
                   </p>
                 </div>
                 <div
@@ -1079,31 +1145,31 @@ export default function Home() {
                   <h5 className="text-white mb-4">Get In Touch</h5>
                   <p>
                     <i className="fa fa-map-marker-alt me-3" />
-                    123 Street, New York, USA
+                    kozhikkode,Kerala,India
                   </p>
                   <p>
                     <i className="fa fa-phone-alt me-3" />
-                    +012 345 67890
+                    +91-8899908450
                   </p>
                   <p>
                     <i className="fa fa-envelope me-3" />
-                    info@example.com
+                    contact@wexorai.com
                   </p>
                   <div className="d-flex pt-2">
                     <a className="btn btn-outline-light btn-social" href="">
-                      <i className="fab fa-twitter" />
+                      <FaTwitter size={32} color="#1DA1F2" />{" "}
                     </a>
                     <a className="btn btn-outline-light btn-social" href="">
-                      <i className="fab fa-facebook-f" />
+                      <FaFacebook size={32} color="#1877F2" />{" "}
                     </a>
                     <a className="btn btn-outline-light btn-social" href="">
-                      <i className="fab fa-youtube" />
+                      <FaYoutube size={32} color="#FF0000" />
                     </a>
                     <a className="btn btn-outline-light btn-social" href="">
-                      <i className="fab fa-instagram" />
+                      <FaInstagram size={32} color="#C13584" />{" "}
                     </a>
                     <a className="btn btn-outline-light btn-social" href="">
-                      <i className="fab fa-linkedin-in" />
+                      <FaLinkedin size={32} color="#0077B5" />{" "}
                     </a>
                   </div>
                 </div>
@@ -1112,42 +1178,48 @@ export default function Home() {
                   data-wow-delay="0.5s"
                 >
                   <h5 className="text-white mb-4">Popular Link</h5>
-                  <a className="btn btn-link" href="">
+                  <Link className="btn btn-link" href="">
+                    Home
+                  </Link>
+                  <Link className="btn btn-link" href="About">
                     About Us
-                  </a>
-                  <a className="btn btn-link" href="">
+                  </Link>
+                  <Link className="btn btn-link" href="Contact">
                     Contact Us
-                  </a>
-                  <a className="btn btn-link" href="">
+                  </Link>
+                  <Link className="btn btn-link" href="Service">
+                    Our Services
+                  </Link>
+                  {/* <Link className="btn btn-link" href="">
                     Privacy Policy
-                  </a>
-                  <a className="btn btn-link" href="">
+                  </Link>
+                  <Link className="btn btn-link" href="">
                     Terms &amp; Condition
-                  </a>
-                  <a className="btn btn-link" href="">
+                  </Link>
+                  <Link className="btn btn-link" href="">
                     Career
-                  </a>
+                  </Link> */}
                 </div>
                 <div
                   className="col-md-6 col-lg-3 wow fadeIn"
                   data-wow-delay="0.7s"
                 >
                   <h5 className="text-white mb-4">Our Services</h5>
-                  <a className="btn btn-link" href="">
-                    Robotic Automation
-                  </a>
-                  <a className="btn btn-link" href="">
-                    Machine learning
-                  </a>
-                  <a className="btn btn-link" href="">
-                    Predictive Analysis
-                  </a>
-                  <a className="btn btn-link" href="">
-                    Data Science
-                  </a>
-                  <a className="btn btn-link" href="">
-                    Robot Technology
-                  </a>
+                  <Link className="btn btn-link" href="Service">
+                    Web-Devolepment
+                  </Link>
+                  <Link className="btn btn-link" href="Service">
+                    Software-development
+                  </Link>
+                  <Link className="btn btn-link" href="Service">
+                    AI-Automation
+                  </Link>
+                  <Link className="btn btn-link" href="Service">
+                    Chatbot
+                  </Link>
+                  <Link className="btn btn-link" href="Service">
+                    Mobile-App development
+                  </Link>
                 </div>
               </div>
             </div>
@@ -1155,27 +1227,18 @@ export default function Home() {
               <div className="copyright">
                 <div className="row">
                   <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    ©{" "}
-                    <a className="border-bottom" href="#">
-                      Your Site Name
-                    </a>
-                    , All Right Reserved.
-                    {/*/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. *** /*/}
-                    Designed By{" "}
-                    <a className="border-bottom" href="https://htmlcodex.com">
-                      HTML Codex
-                    </a>{" "}
-                    Distributed By{" "}
-                    <a className="border-bottom" href="https://themewagon.com">
-                      ThemeWagon
-                    </a>
+                    <div className="copyright-text">
+                      <a href="/">
+                        <p>Copyright &copy; 2023, All Right Reserved WexorAI</p>
+                      </a>
+                    </div>{" "}
                   </div>
                   <div className="col-md-6 text-center text-md-end">
                     <div className="footer-menu">
-                      <a href="">Home</a>
-                      <a href="">Cookies</a>
-                      <a href="">Help</a>
-                      <a href="">FAQs</a>
+                      <Link href="/">Home</Link>
+                      <Link href="Service">Service</Link>
+                      <Link href="About">About</Link>
+                      <Link href="FAQs">FAQs</Link>
                     </div>
                   </div>
                 </div>
@@ -1184,12 +1247,12 @@ export default function Home() {
           </div>
           {/* Footer End */}
           {/* Back to Top */}
-          <a
-            href="#"
-            className="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
+          <div
+          // href=""
+          // className="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
           >
-            <i className="bi bi-arrow-up" />
-          </a>
+            <Chatbot />
+          </div>
         </>
       </div>
     </>

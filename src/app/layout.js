@@ -47,52 +47,57 @@ export default function RootLayout({ children }) {
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
           crossOrigin="anonymous"
         ></link>
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com"></link> */}
 
-        <link
+        {/* <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
           // crossOrigin
           crossOrigin="anonymous"
-        ></link>
+        ></link> */}
         {/* google font */}
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Aldrich&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         ></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Ysabeau+Infant:wght@300&display=swap"
           rel="stylesheet"
-        ></link>
+        ></link> */}
         {/* font awsome */}
         {/* <link
           rel="stylesheet"
           href="path/to/font-awesome/css/font-awesome.min.css"
         ></link> */}
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
-    rel="stylesheet"
-  />
-  {/* Icon Font Stylesheet */}
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-    rel="stylesheet"
-  />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-    rel="stylesheet"
-  />
-  {/* Libraries Stylesheet */}
-  <link href="lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-  {/* Customized Bootstrap Stylesheet */}
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  {/* Template Stylesheet */}
-  <link href="css/style.css" rel="stylesheet" />
-
-
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+          rel="stylesheet"
+        /> */}
+        {/* Icon Font Stylesheet */}
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+          rel="stylesheet"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+          rel="stylesheet"
+        />
+        {/* Libraries Stylesheet */}
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+          href="lib/owlcarousel/assets/owl.carousel.min.css"
+          rel="stylesheet"
+        />
+        {/* Customized Bootstrap Stylesheet */}
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        {/* Template Stylesheet */}
+        <link href="css/style.css" rel="stylesheet" />
       </Head>
       <body>
         {children}
@@ -120,17 +125,16 @@ export default function RootLayout({ children }) {
           type="text/javascript"
           async // Add the async attribute to load asynchronously
         ></script> */}
-          <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></Script>
-    <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></Script>
-    <Script src="lib/wow/wow.min.js"></Script>
-    <Script src="lib/easing/easing.min.js"></Script>
-    <Script src="lib/waypoints/waypoints.min.js"></Script>
-    <Script src="lib/counterup/counterup.min.js"></Script>
-    <Script src="lib/owlcarousel/owl.carousel.min.js"></Script>
+        <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></Script>
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></Script>
+        <Script src="lib/wow/wow.min.js"></Script>
+        <Script src="lib/easing/easing.min.js"></Script>
+        <Script src="lib/waypoints/waypoints.min.js"></Script>
+        <Script src="lib/counterup/counterup.min.js"></Script>
+        <Script src="lib/owlcarousel/owl.carousel.min.js"></Script>
 
-    {/* <!-- Template Javascript --> */}
-    <Script src="js/main.js"></Script>
-
+        {/* <!-- Template Javascript --> */}
+        <Script src="js/main.js"></Script>
       </body>
     </html>
   );
