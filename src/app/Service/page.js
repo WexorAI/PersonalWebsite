@@ -13,6 +13,7 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import Chatbot from "../ChatBot/page";
 
 function Service() {
   return (
@@ -501,12 +502,12 @@ function Service() {
       </div>
       {/* Footer End */}
       {/* Back to Top */}
-      <a
-        href="#"
-        className="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
-      >
-        <i className="bi bi-arrow-up" />
-      </a>
+      <div
+          // href=""
+          // className="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
+          >
+            <Chatbot />
+          </div>
     </>
   );
 }

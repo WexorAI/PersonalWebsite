@@ -6,6 +6,7 @@ import { Button } from "antd";
 import { title } from "process";
 import Image from "next/image";
 import { Link } from "react-scroll";
+import { FaPaperPlane } from "react-icons/fa";
 
 function Chatbot() {
   const [botMessage, setBotMessage] = useState("Loading...");
@@ -198,7 +199,7 @@ function Chatbot() {
                     className="input-box"
                     type="text"
                     name="msg"
-                    placeholder="Tap 'Enter' to send a message"
+                    placeholder="Tap 'Enter' to send a message..."
                     value={inputText}
                     onChange={handleInputChange}
                     onKeyPress={handleInputKeyPress}
@@ -208,11 +209,10 @@ function Chatbot() {
 
                 <div className="chat-bar-icons">
                   <Button
-                    className="btn  text-white"
-                    style={{ color: "#333" }}
+                    className="btn text-white bg-primary"
                     onClick={handleSendButtonClick}
                   >
-                    sent
+                    <FaPaperPlane  style={{marginBottom:"10px"}}/>
                   </Button>
                 </div>
               </div>
