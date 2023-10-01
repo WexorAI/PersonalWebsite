@@ -141,13 +141,14 @@ function Chatbot() {
             Our bot answers instantly
           </div>
         </div> */}
-        {/* <div className="navbar-brand  "> */}
+        <div style={{backgroundColor:"#dfe2f0"}}  >
         <div
           style={{
-            marginRight: "35px",
+            // marginRight: "35px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            backgroundColor:"#0099ff",
           }}
         >
           <div>
@@ -160,13 +161,13 @@ function Chatbot() {
               style={{
                 // borderRadius: "25%",
                 zIndex: 1,
-                // marginBottom: "8px ",
+                // paddingBottom: "8px ",
               }}
             />
           </div>
           <h3
             style={{
-              marginLeft: "10px",
+              marginLeft: "15px",
               fontSize: "15px",
               fontWeight: "bold",
               color: "white",
@@ -175,7 +176,9 @@ function Chatbot() {
             WexorAI
           </h3>
         </div>{" "}
-        {/* </div> */}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L80,117.3C160,139,320,181,480,181.3C640,181,800,139,960,144C1120,149,1280,203,1360,229.3L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>                 
+
+        </div>
         <div />
         <div className="full-chat-block">
           <div className="outer-container">
