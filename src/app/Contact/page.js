@@ -307,16 +307,16 @@ function Contact() {
                 <a className="btn btn-outline-light btn-social" href="">
                   <FaTwitter size={32} color="#1DA1F2" />{" "}
                 </a>
-                <a className="btn btn-outline-light btn-social" href="">
+                <a href="https://www.facebook.com/people/Wexorai/61550830745032/?mibextid=9R9pXO" className="btn btn-outline-light btn-social" >
                   <FaFacebook size={32} color="#1877F2" />{" "}
                 </a>
                 <a className="btn btn-outline-light btn-social" href="">
                   <FaYoutube size={32} color="#FF0000" />
                 </a>
-                <a className="btn btn-outline-light btn-social" href="">
+                <a href="https://www.instagram.com/wexorai/" className="btn btn-outline-light btn-social" >
                   <FaInstagram size={32} color="#C13584" />{" "}
                 </a>
-                <a className="btn btn-outline-light btn-social" href="">
+                <a href="https://www.linkedin.com/company/wexorai/" className="btn btn-outline-light btn-social" >
                   <FaLinkedin size={32} color="#0077B5" />{" "}
                 </a>
               </div>
