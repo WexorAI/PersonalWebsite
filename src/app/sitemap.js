@@ -8,16 +8,28 @@ export default function sitemap() {
         priority: 1,
       },
       {
-        url: 'https://wexorai.com/contactus',
+        url: 'https://wexorai.com/About',
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.8,
       },
       {
-        url: 'https://wexorai.com/comingSoon',
+        url: 'https://wexorai.com/Service',
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.5,
       },
+      {
+        url: 'https://wexorai.com/Team',
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 1,
+      },
+      {
+        url: 'https://wexorai.com/Contact',
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      }
     ]
   }

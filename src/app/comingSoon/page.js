@@ -18,10 +18,9 @@ function comingSoon() {
           <div class="contentt">
             <h1>Coming Soon</h1>
             <p>
-              Perfect and awesome to present your future product or service.{" "}
+            Thank you for visiting! We're currently working behind the scenes {" "}
               <br />
-              Hooking audience attention is all in the opener.
-            </p>
+              to create an amazing website experience for you.            </p>
             <Link legacyBehavior href="/">
               <a class="button2">🡨 BACK to home</a>
             </Link>

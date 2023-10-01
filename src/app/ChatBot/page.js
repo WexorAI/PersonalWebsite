@@ -5,6 +5,8 @@ import "./ChatBot.css"; // Make sure to adjust the path to your CSS file
 import { Button } from "antd";
 import { title } from "process";
 import Image from "next/image";
+import { Link } from "react-scroll";
+import { FaPaperPlane } from "react-icons/fa";
 
 function Chatbot() {
   const [botMessage, setBotMessage] = useState("Loading...");
@@ -113,9 +115,9 @@ function Chatbot() {
 
   return (
     <div className="chat-bar-collapsible ">
-      <div className={`content ${isActive ? "active" : ""}`}>
+      <div className={`content ${isActive ? "activ " : ""}`}>
         {/* header */}
-        <div className="chatbot-header  text-center">
+        {/* <div className="chatbot-header  text-center">
           <div className="h5">
             Hi <span>USER</span>
           </div>
@@ -138,6 +140,46 @@ function Chatbot() {
           <div className="text-center fw-bold mx-3 mb-0">
             Our bot answers instantly
           </div>
+        </div> */}
+        <div style={{ backgroundColor: "#dfe2f0" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "#0099ff",
+            }}
+          >
+            <div>
+              <Image
+                src="./WexorBlackDots.png"
+                alt="Login Image"
+                width={40}
+                height={30}
+                loading="lazy"
+                style={{
+                  zIndex: 1,
+                }}
+              />
+            </div>
+            <div
+              style={{
+                marginLeft: "15px",
+                fontSize: "25px",
+                fontWeight: "bold",
+                color: "white",
+              }}
+            >
+              WexorAI
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 70 1440 330"
+            style={{ fill: "#0099ff", fillOpacity: 1 }}
+          >
+            <path d="M0,96L80,117.3C160,139,320,181,480,181.3C640,181,800,139,960,144C1120,149,1280,203,1360,229.3L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+          </svg>
         </div>
         <div />
         <div className="full-chat-block">
@@ -162,7 +204,7 @@ function Chatbot() {
                     className="input-box"
                     type="text"
                     name="msg"
-                    placeholder="Tap 'Enter' to send a message"
+                    placeholder="Tap 'Enter' to send a message..."
                     value={inputText}
                     onChange={handleInputChange}
                     onKeyPress={handleInputKeyPress}
@@ -172,11 +214,10 @@ function Chatbot() {
 
                 <div className="chat-bar-icons">
                   <Button
-                    className="btn  text-white"
-                    style={{ color: "#333" }}
+                    className="btn text-white bg-primary"
                     onClick={handleSendButtonClick}
                   >
-                    sent
+                    <FaPaperPlane style={{ marginBottom: "10px" }} />
                   </Button>
                 </div>
               </div>
@@ -191,8 +232,8 @@ function Chatbot() {
       <Image
         src="./chatIcon.png"
         alt="Login Image"
-        width={90}
-        height={90}
+        width={140}
+        height={112}
         type="button"
         loading="lazy"
         className="collapsible "
