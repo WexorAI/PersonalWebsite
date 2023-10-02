@@ -15,6 +15,10 @@ import {
   FaUsers,
   FaHome,
   FaQuoteLeft,
+  FaArrowRight,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
 } from "react-icons/fa";
 import Chatbot from "./ChatBot/page";
 // import Chatbot from "./ChatBot/page";
@@ -111,13 +115,13 @@ export default function Home() {
               <div className="row g-5 pt-5">
                 <div className="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
                   <div className="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">
-                    Wexor.AI
+                    WexorAI
                   </div>
                   <h1 className="display-4 text-white mb-4 animated slideInRight">
                     Welcome to the future of AI-powered business automation{" "}
                   </h1>
                   <p className="text-white mb-4 animated slideInRight">
-                    Welcome to Wexor.AI, where AI meets business automation.
+                    Welcome to WexorAI, where AI meets business automation.
                     Explore the future of streamlined operations, enhanced
                     efficiency, and unprecedented growth with us
                   </p>
@@ -411,7 +415,7 @@ export default function Home() {
                       <FaCheck color="#1363c6" />
                     </div>
                     <span>
-                      Together, we'll create a website that reflects your brand.
+                    Crafting Your Brand Identity
                     </span>
                   </div>
                   <div className="d-flex align-items-center text-white mb-3">
@@ -495,7 +499,7 @@ export default function Home() {
                       <h5 className="lh-base text-white mb-3">
                       Discover the power of artificial intelligence behind our chatbot's responses                      </h5>
                       <span className="btn btn-square btn-primary">
-                        <i className="fa fa-arrow-right" />
+                      <FaArrowRight />
                       </span>
                     </a>
                   </div>
@@ -509,7 +513,7 @@ export default function Home() {
                       Experience natural and engaging conversations.
                       </h5>
                       <span className="btn btn-square btn-primary">
-                        <i className="fa fa-arrow-right" />
+                      <FaArrowRight />
                       </span>
                     </a>
                   </div>
@@ -523,7 +527,7 @@ export default function Home() {
                       Our chatbot is ready to assist you around the clock.
                       </h5>
                       <span className="btn btn-square btn-primary">
-                        <i className="fa fa-arrow-right" />
+                      <FaArrowRight />
                       </span>
                     </a>
                   </div>
@@ -1141,15 +1145,15 @@ export default function Home() {
                 >
                   <h5 className="text-white mb-4">Get In Touch</h5>
                   <p>
-                    <i className="fa fa-map-marker-alt me-3" />
+                  <FaMapMarkerAlt className="me-3" />
                     kozhikkode,Kerala,India
                   </p>
                   <p>
-                    <i className="fa fa-phone-alt me-3" />
+                    <FaPhoneAlt className="me-3" />
                     +91-8899908450
                   </p>
                   <p>
-                    <i className="fa fa-envelope me-3" />
+                    <FaEnvelope className="me-3" />
                     contact@wexorai.com
                   </p>
                   <div className="d-flex pt-2">
