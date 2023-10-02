@@ -115,13 +115,13 @@ export default function Home() {
               <div className="row g-5 pt-5">
                 <div className="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
                   <div className="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">
-                    Wexor.AI
+                    WexorAI
                   </div>
                   <h1 className="display-4 text-white mb-4 animated slideInRight">
                     Welcome to the future of AI-powered business automation{" "}
                   </h1>
                   <p className="text-white mb-4 animated slideInRight">
-                    Welcome to Wexor.AI, where AI meets business automation.
+                    Welcome to WexorAI, where AI meets business automation.
                     Explore the future of streamlined operations, enhanced
                     efficiency, and unprecedented growth with us
                   </p>
