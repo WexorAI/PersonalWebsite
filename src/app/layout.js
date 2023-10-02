@@ -6,7 +6,6 @@ import "../../public/lib/animate/animate.min.css";
 import  "../../public/lib/owlcarousel/assets/owl.carousel.min.css";
 import  "../../public/css/bootstrap.min.css";
 import  "../../public/css/style.css";
-
 // import "../../public/lib/animate/animate.css";
 // import  "../../public/lib/owlcarousel/assets/owl.carousel.css";
 // import  "../../public/lib/owlcarousel/assets/owl.theme.default.css";

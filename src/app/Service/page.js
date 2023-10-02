@@ -3,11 +3,14 @@ import React from "react";
 import Image from "next/image";
 import {
   FaCode,
+  FaEnvelope,
   FaFacebook,
   FaInstagram,
   FaLaptopCode,
   FaLinkedin,
+  FaMapMarkerAlt,
   FaMobileAlt,
+  FaPhoneAlt,
   FaQuoteLeft,
   FaRobot,
   FaTwitter,
@@ -414,15 +417,15 @@ function Service() {
             <div className="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
               <h5 className="text-white mb-4">Get In Touch</h5>
               <p>
-                <i className="fa fa-map-marker-alt me-3" />
+              <FaMapMarkerAlt className="me-3" />
                 kozhikkode,Kerala,India
               </p>
               <p>
-                <i className="fa fa-phone-alt me-3" />
+                <FaPhoneAlt className="me-3" />
                 +91-8899908450
               </p>
               <p>
-                <i className="fa fa-envelope me-3" />
+                <FaEnvelope className="me-3" />
                 contact@wexorai.com
               </p>
               <div className="d-flex pt-2">
