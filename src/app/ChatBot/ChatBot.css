@@ -26,7 +26,9 @@ body {
   transition: max-height 0.5s ease-out;
   background-color: #f1f1f1;
   /* background-color: #0099ff; */
-  border-radius: 30px;
+  border-radius: 10px;
+  /* border-top-right-radius: 10px;
+  border-top-left-radius: 10px; */
 }
 .activ   {
   max-height: 600px; /* Adjust this value to show the content */
@@ -101,13 +103,13 @@ body {
   border: none;
   box-sizing: border-box;
   width: 100%;
-  border-radius: 10px;
-  padding: 9px;
+  border-radius: 6px;
+  padding: 10px;
   font-size: 12px;
   color: #000;
   background-color: white;
   outline: none;
-  margin: 10px;
+  margin: 5px;
 }
 
 .userText {
