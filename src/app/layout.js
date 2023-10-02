@@ -33,7 +33,7 @@ export const metadata = {
   },
   category: "technology",
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
   },
