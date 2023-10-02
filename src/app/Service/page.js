@@ -155,102 +155,119 @@ function Service() {
       {/* Full Screen Search End */}
       {/* Service Start */}
       <div className="container-fluid bg-light mt-5 py-5">
-        <div className="container py-5">
-          <div className="row g-5 align-items-center">
-            <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-              <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">
-                Our Services
-              </div>
-              <h1 className="mb-4">
-                Our Excellent AI Solutions for Your Business
-              </h1>
-              <p className="mb-4">
-                Welcome to WexorAI,the leading provider of cutting-edge
-                technology solutions. Our expertise lies in delivering
-                innovative services that empower your business to excel in the
-                digital age. You can explore the wide range of solutions we
-                offer to help your business thrive:
-              </p>
-              <Link
-                className="btn btn-primary rounded-pill px-4"
-                href="Service"
-              >
-                Read More
-              </Link>
-            </div>
-            <div className="col-lg-7">
-              <div className="row g-4">
-                <div className="col-md-6">
-                  <div className="row g-4">
-                    <div className="col-12 wow fadeIn" data-wow-delay="0.1s">
-                      <div className="service-item d-flex flex-column justify-content-center text-center rounded">
-                        <div className="service-icon btn-square">
-                          <FaCode size={64} color="blue" />{" "}
-                        </div>
-                        <h5 className="mb-3">Web Development:</h5>
-                        <p>
-                          Our web team excels in crafting visually captivating,
-                          functional websites, tailored to your unique business
-                          needs. Find your perfect online brand representation
-                          with us.
-                        </p>
-                        {/* <a className="btn px-3 mt-auto mx-auto" href="">
-                              Read More
-                            </a> */}
-                      </div>
-                    </div>
-                    <div className="col-12 wow fadeIn" data-wow-delay="0.5s">
-                      <div className="service-item d-flex flex-column justify-content-center text-center rounded">
-                        <div className="service-icon btn-square">
-                          <FaLaptopCode size={64} color="purple" />{" "}
-                        </div>
-                        <h5 className="mb-3">Software Development:</h5>
-                        <p>
-                          Unleash your organization's potential with our expert
-                          software development. Specializing in scalable,
-                          efficient solutions tailored to your needs, we ensure
-                          seamless business operations.
-                        </p>
-                        {/* <a className="btn px-3 mt-auto mx-auto" href="">
-                              Read More
-                            </a> */}
-                      </div>
-                    </div>
+            <div className="container py-5">
+              <div className="row g-5 align-items-center">
+                <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                  <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">
+                    Our Services
                   </div>
+                  <h1 className="mb-4">
+                    Our Excellent AI Solutions for Your Business
+                  </h1>
+                  <p className="mb-4">
+                    Welcome to WexorAI,the leading provider of cutting-edge
+                    technology solutions. Our expertise lies in delivering
+                    innovative services that empower your business to excel in
+                    the digital age. You can explore the wide range of solutions
+                    we offer to help your business thrive:
+                  </p>
+                  <Link
+                    className="btn btn-primary rounded-pill px-4"
+                    href="Service"
+                  >
+                    Read More
+                  </Link>
                 </div>
-                <div className="col-md-6 pt-md-4">
+                <div className="col-lg-7">
                   <div className="row g-4">
-                    <div className="col-12 wow fadeIn" data-wow-delay="0.3s">
-                      <div className="service-item d-flex flex-column justify-content-center text-center rounded">
-                        <div className="service-icon btn-square">
-                          <FaRobot size={64} color="green" />{" "}
-                        </div>
-                        <h5 className="mb-3">Chatbot &amp; AI Automation:</h5>
-                        <p>
-                          Elevate customer support and workflow efficiency with
-                          our AI solutions. We offer real-time assistance,
-                          reducing support team workload. Our AI automation
-                          boosts productivity.
-                        </p>
-                        {/* <a className="btn px-3 mt-auto mx-auto" href="">
+                    <div className="col-md-6">
+                      <div className="row g-4">
+                        <div
+                          className="col-12 wow fadeIn"
+                          data-wow-delay="0.1s"
+                        >
+                          <div className="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div className="service-icon btn-square">
+                              <FaCode size={40} color="#1363c6" />{" "}
+                            </div>
+                            <h5 className="mb-3">Web Development:</h5>
+                            <p>
+                              Our web team excels in crafting visually
+                              captivating, functional websites, tailored to your
+                              unique business needs. Find your perfect online
+                              brand representation with us.
+                            </p>
+                            {/* <a className="btn px-3 mt-auto mx-auto" href="">
                               Read More
                             </a> */}
+                          </div>
+                        </div>
+                        <div
+                          className="col-12 wow fadeIn"
+                          data-wow-delay="0.5s"
+                        >
+                          <div className="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div className="service-icon btn-square">
+                              <FaLaptopCode size={40} color="#1363c6" />{" "}
+                            </div>
+                            <h5 className="mb-3">Software Development:</h5>
+                            <p>
+                              Unleash your organization's potential with our
+                              expert software development. Specializing in
+                              scalable, efficient solutions tailored to your
+                              needs, we ensure seamless business operations.
+                            </p>
+                            {/* <a className="btn px-3 mt-auto mx-auto" href="">
+                              Read More
+                            </a> */}
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div className="col-12 wow fadeIn" data-wow-delay="0.7s">
-                      <div className="service-item d-flex flex-column justify-content-center text-center rounded">
-                        <div className="service-icon btn-square">
-                          <FaMobileAlt size={64} color="pink" />{" "}
-                        </div>
-                        <h5 className="mb-3">App Development:</h5>
-                        <p>
-                          Discover user-friendly, feature-rich apps on Android
-                          and iOS , boosting your mobile presence effectively in
-                          this smartphone era.
-                        </p>
-                        {/* <a className="btn px-3 mt-auto mx-auto" href="">
+                    <div className="col-md-6 pt-md-4">
+                      <div className="row g-4">
+                        <div
+                          className="col-12 wow fadeIn"
+                          data-wow-delay="0.3s"
+                        >
+                          <div className="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div className="service-icon btn-square">
+                              <FaRobot size={40} color="#1363c6" />{" "}
+                            </div>
+                            <h5 className="mb-3">
+                              Chatbot &amp; AI Automation:
+                            </h5>
+                            <p>
+                              Elevate customer support and workflow efficiency
+                              with our AI solutions. We offer real-time
+                              assistance, reducing support team workload.
+                            </p>
+                            {/* <a className="btn px-3 mt-auto mx-auto" href="">
                               Read More
                             </a> */}
+                          </div>
+                        </div>
+                        <div
+                          className="col-12 wow fadeIn"
+                          data-wow-delay="0.7s"
+                        >
+                          <div className="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div className="service-icon btn-square">
+                              <FaMobileAlt size={40} color="#1363c6" />{" "}
+                            </div>
+                            <h5 className="mb-3">App Development:</h5>
+                            <p>
+                              Elevate your digital presence with our
+                              cutting-edge Android and iOS apps. Seamlessly
+                              connect with your audience in the smartphone age,
+                              delivering user-friendly and feature-rich
+                              experiences.
+                            </p>
+                            {/* <a className="btn px-3 mt-auto mx-auto" href="">
+                              Read More
+                            </a> */}
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -258,92 +275,84 @@ function Service() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
       {/* Service End */}
       {/* Testimonial Start */}
       <div className="container-xxl py-5">
-        <div className="container py-5">
-          <div className="row g-5">
-            <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-              <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">
-                Testimonial
-              </div>
-              <h1 className="mb-4">What Say Our Clients!</h1>
-              <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum
-                et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                justo et tempor eirmod magna dolore erat amet
-              </p>
-              <a className="btn btn-primary rounded-pill px-4" href="">
-                Read More
-              </a>
-            </div>
-            <div className="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
-              <div className="owl-carousel testimonial-carousel border-start border-primary">
-                <div className="testimonial-item ps-5">
-                  <FaQuoteLeft size={32} className="text-primary mb-3" />
-                  <p className="fs-4">
-                    Aliqu diam amet diam et eos labore. Clita erat ipsum et
-                    lorem et sit, sed stet no labore lorem sit. Sanctus clita
-                    duo justo et tempor eirmod magna dolore erat amet
-                  </p>
-                  <div className="d-flex align-items-center">
-                    <img
-                      className="img-fluid flex-shrink-0 rounded-circle"
-                      src="img/testimonial-1.jpg"
-                      style={{ width: 60, height: 60 }}
-                    />
-                    <div className="ps-3">
-                      <h5 className="mb-1">Client Name</h5>
-                      <span>Profession</span>
-                    </div>
+            <div className="container py-5">
+              <div className="row g-5">
+                <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                  <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">
+                  Unlocking Business Excellence with WexorAI
                   </div>
-                </div>
-                <div className="testimonial-item ps-5">
-                  <FaQuoteLeft size={32} className="text-primary mb-3" />
-                  <p className="fs-4">
-                    Aliqu diam amet diam et eos labore. Clita erat ipsum et
-                    lorem et sit, sed stet no labore lorem sit. Sanctus clita
-                    duo justo et tempor eirmod magna dolore erat amet
+                  <h1 className="mb-4">What Say Our Clients!</h1>
+                  <p className="mb-4">
+                  At WexorAI, our mission is to drive technological transformation for businesses, and we take pride in the experiences our clients have shared. Here's what our clients have to say about how we've helped them harness the power of artificial intelligence and advanced technology to enhance their operations, elevate customer experiences, and achieve outstanding results
                   </p>
-                  <div className="d-flex align-items-center">
-                    <img
-                      className="img-fluid flex-shrink-0 rounded-circle"
-                      src="img/testimonial-2.jpg"
-                      style={{ width: 60, height: 60 }}
-                    />
-                    <div className="ps-3">
-                      <h5 className="mb-1">Client Name</h5>
-                      <span>Profession</span>
+                  <a className="btn btn-primary rounded-pill px-4" href="">
+                    Read More
+                  </a>
+                </div>
+                <div className="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
+                  <div className="owl-carousel testimonial-carousel border-start border-primary">
+                    <div className="testimonial-item ps-5">
+                      <FaQuoteLeft size={32} className="text-primary mb-3" />{" "}
+                      <p className="fs-4">
+                      WexorAI's chatbot transformed our customer support. It's available 24/7, providing instant responses and reducing our support team's workload. Our customers are happier, and we've seen a significant boost in customer satisfaction.
+                      </p>
+                      <div className="d-flex align-items-center">
+                        <img
+                          className="img-fluid flex-shrink-0 rounded-circle"
+                          src=""
+                          alt="notfound"
+                          style={{ width: 60, height: 60 }}
+                        />
+                        <div className="ps-3">
+                          <h5 className="mb-1">Musthafa Kalodi</h5>
+                          <span></span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="testimonial-item ps-5">
-                  <FaQuoteLeft size={32} className="text-primary mb-3" />
-                  <p className="fs-4">
-                    Aliqu diam amet diam et eos labore. Clita erat ipsum et
-                    lorem et sit, sed stet no labore lorem sit. Sanctus clita
-                    duo justo et tempor eirmod magna dolore erat amet
-                  </p>
-                  <div className="d-flex align-items-center">
-                    <img
-                      className="img-fluid flex-shrink-0 rounded-circle"
-                      src="img/testimonial-3.jpg"
-                      style={{ width: 60, height: 60 }}
-                    />
-                    <div className="ps-3">
-                      <h5 className="mb-1">Client Name</h5>
-                      <span>Profession</span>
+                    <div className="testimonial-item ps-5">
+                      <FaQuoteLeft size={32} className="text-primary mb-3" />
+                      <p className="fs-4">
+                      WexorAI's AI automation streamlined our workflow. It's like having a virtual assistant that handles repetitive tasks, allowing our team to focus on more strategic initiatives. Our efficiency has skyrocketed since partnering with them.
+                      </p>
+                      <div className="d-flex align-items-center">
+                        <img
+                          className="img-fluid flex-shrink-0 rounded-circle"
+                          src=""
+                          alt="notfound"
+                          style={{ width: 60, height: 60 }}
+                        />
+                        <div className="ps-3">
+                          <h5 className="mb-1">Salmanul faris</h5>
+                          <span>MOTO heads</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="testimonial-item ps-5">
+                      <FaQuoteLeft size={32} className="text-primary mb-3" />
+                      <p className="fs-4">
+                      The chatbot developed by WexorAI engages in natural, human-like conversations. It's not just a tool; it's a genuine part of our team. Customers love the personalized interactions, and it has improved our brand perception.
+                      </p>
+                      <div className="d-flex align-items-center">
+                        <img
+                          className="img-fluid flex-shrink-0 rounded-circle"
+                          src=""
+                          alt="notfound"
+                          style={{ width: 60, height: 60 }}
+                        />
+                        <div className="ps-3">
+                          <h5 className="mb-1">Muhammed Basith</h5>
+                          <span>KPK Traders</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
       {/* Testimonial End */}
       {/* Newsletter Start */}
       <div className="container-fluid bg-primary newsletter py-5">
@@ -420,16 +429,16 @@ function Service() {
                 <a className="btn btn-outline-light btn-social" href="">
                   <FaTwitter size={32} color="#1DA1F2" />{" "}
                 </a>
-                <a className="btn btn-outline-light btn-social" href="">
+                <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/people/Wexorai/61550830745032/?mibextid=9R9pXO">
                   <FaFacebook size={32} color="#1877F2" />{" "}
                 </a>
                 <a className="btn btn-outline-light btn-social" href="">
                   <FaYoutube size={32} color="#FF0000" />
                 </a>
-                <a className="btn btn-outline-light btn-social" href="">
+                <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/wexorai/">
                   <FaInstagram size={32} color="#C13584" />{" "}
                 </a>
-                <a className="btn btn-outline-light btn-social" href="">
+                <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/wexorai/">
                   <FaLinkedin size={32} color="#0077B5" />{" "}
                 </a>
               </div>

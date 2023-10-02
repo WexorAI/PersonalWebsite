@@ -213,16 +213,16 @@ function About() {
                 >
                   Read More
                 </Link>
-                <a className="btn btn-outline-primary btn-square me-3" href="">
+                <a className="btn btn-outline-primary btn-square me-3" href="https://www.facebook.com/people/Wexorai/61550830745032/?mibextid=9R9pXO">
                   <FaFacebook />
                 </a>
                 <a className="btn btn-outline-primary btn-square me-3" href="">
                   <FaTwitter />
                 </a>
-                <a className="btn btn-outline-primary btn-square me-3" href="">
+                <a className="btn btn-outline-primary btn-square me-3" href="https://www.instagram.com/wexorai/">
                   <FaInstagram />
                 </a>
-                <a className="btn btn-outline-primary btn-square" href="">
+                <a className="btn btn-outline-primary btn-square" href="https://www.linkedin.com/company/wexorai/">
                   <FaLinkedin />
                 </a>
               </div>
@@ -313,7 +313,7 @@ function About() {
       </div>
       {/* Feature End */}
       {/* Team Start */}
-      <div className="container-fluid bg-light py-5">
+      {/* <div className="container-fluid bg-light py-5">
         <div className="container py-5">
           <div className="row g-5 align-items-center">
             <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
@@ -445,7 +445,7 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Team End */}
       {/* Newsletter Start */}
       <div className="container-fluid bg-primary newsletter py-5">
@@ -522,16 +522,16 @@ function About() {
                 <a className="btn btn-outline-light btn-social" href="">
                   <FaTwitter size={32} color="#1DA1F2" />{" "}
                 </a>
-                <a className="btn btn-outline-light btn-social" href="">
+                <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/people/Wexorai/61550830745032/?mibextid=9R9pXO">
                   <FaFacebook size={32} color="#1877F2" />{" "}
                 </a>
                 <a className="btn btn-outline-light btn-social" href="">
                   <FaYoutube size={32} color="#FF0000" />
                 </a>
-                <a className="btn btn-outline-light btn-social" href="">
+                <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/wexorai/">
                   <FaInstagram size={32} color="#C13584" />{" "}
                 </a>
-                <a className="btn btn-outline-light btn-social" href="">
+                <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/wexorai/">
                   <FaLinkedin size={32} color="#0077B5" />{" "}
                 </a>
               </div>

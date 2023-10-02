@@ -235,7 +235,7 @@ export default function Home() {
                     </Link>
                     <a
                       className="btn btn-outline-primary btn-square me-3"
-                      href=""
+                      href="https://www.facebook.com/people/Wexorai/61550830745032/?mibextid=9R9pXO"
                     >
                       <FaFacebook />
                     </a>
@@ -247,11 +247,14 @@ export default function Home() {
                     </a>
                     <a
                       className="btn btn-outline-primary btn-square me-3"
-                      href=""
+                      href="https://www.instagram.com/wexorai/"
                     >
                       <FaInstagram />
                     </a>
-                    <a className="btn btn-outline-primary btn-square" href="">
+                    <a
+                      className="btn btn-outline-primary btn-square"
+                      href="https://www.linkedin.com/company/wexorai/"
+                    >
                       <FaLinkedin />
                     </a>
                   </div>
@@ -347,8 +350,7 @@ export default function Home() {
                             <p>
                               Elevate customer support and workflow efficiency
                               with our AI solutions. We offer real-time
-                              assistance, reducing support team workload. Our AI
-                              automation boosts productivity.
+                              assistance, reducing support team workload.
                             </p>
                             {/* <a className="btn px-3 mt-auto mx-auto" href="">
                               Read More
@@ -365,9 +367,11 @@ export default function Home() {
                             </div>
                             <h5 className="mb-3">App Development:</h5>
                             <p>
-                              Discover user-friendly, feature-rich apps on
-                              Android and iOS , boosting your mobile presence
-                              effectively in this smartphone era.
+                              Elevate your digital presence with our
+                              cutting-edge Android and iOS apps. Seamlessly
+                              connect with your audience in the smartphone age,
+                              delivering user-friendly and feature-rich
+                              experiences.
                             </p>
                             {/* <a className="btn px-3 mt-auto mx-auto" href="">
                               Read More
@@ -480,17 +484,16 @@ export default function Home() {
                 <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">
                   Case Study
                 </div>
-                <h1 className="mb-4">Explore Our Recent AI Case Studies</h1>
+                <h1 className="mb-4">Explore Our Chatbot Expertise</h1>
               </div>
               <div className="row g-4">
                 <div className="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                   <div className="case-item position-relative overflow-hidden rounded mb-2">
                     <img className="img-fluid" src="img/project-1.jpg" alt="" />
                     <a className="case-overlay text-decoration-none" href="">
-                      <small>Robotic Automation</small>
+                      <small>Advanced AI Integration</small>
                       <h5 className="lh-base text-white mb-3">
-                        Lorem elitr magna stet eirmod labore amet labore clita
-                      </h5>
+                      Discover the power of artificial intelligence behind our chatbot's responses                      </h5>
                       <span className="btn btn-square btn-primary">
                         <i className="fa fa-arrow-right" />
                       </span>
@@ -501,9 +504,9 @@ export default function Home() {
                   <div className="case-item position-relative overflow-hidden rounded mb-2">
                     <img className="img-fluid" src="img/project-2.jpg" alt="" />
                     <a className="case-overlay text-decoration-none" href="">
-                      <small>Machine learning</small>
+                      <small>Human-Like Interaction</small>
                       <h5 className="lh-base text-white mb-3">
-                        Lorem elitr magna stet eirmod labore amet labore clita
+                      Experience natural and engaging conversations.
                       </h5>
                       <span className="btn btn-square btn-primary">
                         <i className="fa fa-arrow-right" />
@@ -515,9 +518,9 @@ export default function Home() {
                   <div className="case-item position-relative overflow-hidden rounded mb-2">
                     <img className="img-fluid" src="img/project-3.jpg" alt="" />
                     <a className="case-overlay text-decoration-none" href="">
-                      <small>Predictive Analysis</small>
+                      <small>24/7 Availability:</small>
                       <h5 className="lh-base text-white mb-3">
-                        Lorem elitr magna stet eirmod labore amet labore clita
+                      Our chatbot is ready to assist you around the clock.
                       </h5>
                       <span className="btn btn-square btn-primary">
                         <i className="fa fa-arrow-right" />
@@ -999,14 +1002,11 @@ export default function Home() {
               <div className="row g-5">
                 <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                   <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">
-                    Testimonial
+                  Unlocking Business Excellence with WexorAI
                   </div>
                   <h1 className="mb-4">What Say Our Clients!</h1>
                   <p className="mb-4">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum et
-                    tempor sit. Aliqu diam amet diam et eos labore. Clita erat
-                    ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                    clita duo justo et tempor eirmod magna dolore erat amet
+                  At WexorAI, our mission is to drive technological transformation for businesses, and we take pride in the experiences our clients have shared. Here's what our clients have to say about how we've helped them harness the power of artificial intelligence and advanced technology to enhance their operations, elevate customer experiences, and achieve outstanding results
                   </p>
                   <a className="btn btn-primary rounded-pill px-4" href="">
                     Read More
@@ -1017,57 +1017,54 @@ export default function Home() {
                     <div className="testimonial-item ps-5">
                       <FaQuoteLeft size={32} className="text-primary mb-3" />{" "}
                       <p className="fs-4">
-                        Aliqu diam amet diam et eos labore. Clita erat ipsum et
-                        lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet
+                      WexorAI's chatbot transformed our customer support. It's available 24/7, providing instant responses and reducing our support team's workload. Our customers are happier, and we've seen a significant boost in customer satisfaction.
                       </p>
                       <div className="d-flex align-items-center">
                         <img
                           className="img-fluid flex-shrink-0 rounded-circle"
-                          src="img/testimonial-1.jpg"
+                          src=""
+                          alt="notfound"
                           style={{ width: 60, height: 60 }}
                         />
                         <div className="ps-3">
-                          <h5 className="mb-1">Client Name</h5>
-                          <span>Profession</span>
+                          <h5 className="mb-1">Musthafa Kalodi</h5>
+                          <span></span>
                         </div>
                       </div>
                     </div>
                     <div className="testimonial-item ps-5">
                       <FaQuoteLeft size={32} className="text-primary mb-3" />
                       <p className="fs-4">
-                        Aliqu diam amet diam et eos labore. Clita erat ipsum et
-                        lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet
+                      WexorAI's AI automation streamlined our workflow. It's like having a virtual assistant that handles repetitive tasks, allowing our team to focus on more strategic initiatives. Our efficiency has skyrocketed since partnering with them.
                       </p>
                       <div className="d-flex align-items-center">
                         <img
                           className="img-fluid flex-shrink-0 rounded-circle"
-                          src="img/testimonial-2.jpg"
+                          src=""
+                          alt="notfound"
                           style={{ width: 60, height: 60 }}
                         />
                         <div className="ps-3">
-                          <h5 className="mb-1">Client Name</h5>
-                          <span>Profession</span>
+                          <h5 className="mb-1">Salmanul faris</h5>
+                          <span>MOTO heads</span>
                         </div>
                       </div>
                     </div>
                     <div className="testimonial-item ps-5">
                       <FaQuoteLeft size={32} className="text-primary mb-3" />
                       <p className="fs-4">
-                        Aliqu diam amet diam et eos labore. Clita erat ipsum et
-                        lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet
+                      The chatbot developed by WexorAI engages in natural, human-like conversations. It's not just a tool; it's a genuine part of our team. Customers love the personalized interactions, and it has improved our brand perception.
                       </p>
                       <div className="d-flex align-items-center">
                         <img
                           className="img-fluid flex-shrink-0 rounded-circle"
-                          src="img/testimonial-3.jpg"
+                          src=""
+                          alt="notfound"
                           style={{ width: 60, height: 60 }}
                         />
                         <div className="ps-3">
-                          <h5 className="mb-1">Client Name</h5>
-                          <span>Profession</span>
+                          <h5 className="mb-1">Muhammed Basith</h5>
+                          <span>KPK Traders</span>
                         </div>
                       </div>
                     </div>
@@ -1159,16 +1156,25 @@ export default function Home() {
                     <a className="btn btn-outline-light btn-social" href="">
                       <FaTwitter size={32} color="#1DA1F2" />{" "}
                     </a>
-                    <a className="btn btn-outline-light btn-social" href="">
+                    <a
+                      className="btn btn-outline-light btn-social"
+                      href="https://www.facebook.com/people/Wexorai/61550830745032/?mibextid=9R9pXO"
+                    >
                       <FaFacebook size={32} color="#1877F2" />{" "}
                     </a>
                     <a className="btn btn-outline-light btn-social" href="">
                       <FaYoutube size={32} color="#FF0000" />
                     </a>
-                    <a className="btn btn-outline-light btn-social" href="">
+                    <a
+                      className="btn btn-outline-light btn-social"
+                      href="https://www.instagram.com/wexorai/"
+                    >
                       <FaInstagram size={32} color="#C13584" />{" "}
                     </a>
-                    <a className="btn btn-outline-light btn-social" href="">
+                    <a
+                      className="btn btn-outline-light btn-social"
+                      href="https://www.linkedin.com/company/wexorai/"
+                    >
                       <FaLinkedin size={32} color="#0077B5" />{" "}
                     </a>
                   </div>

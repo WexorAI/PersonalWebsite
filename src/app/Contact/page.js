@@ -1,6 +1,9 @@
+"use client"
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import axios from "axios"; // Import Axios
+
 import {
   FaFacebook,
   FaInstagram,
@@ -11,6 +14,48 @@ import {
 import Chatbot from "../ChatBot/page";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    // Send data to your Node.js server
+    axios
+      .post("https://chatbot.wexorai.com/clientmessagef3", {
+        client_id: "wexorai",
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      })
+      .then(function (response) {
+        if (response.data.status) {
+          // Email sent successfully, you can show a success message here.
+          alert("Email sent successfully!");
+          window.location.reload();
+        } else {
+          // Handle errors here if the email failed to send.
+          alert("Error sending the email. Please try again later.");
+          window.location.reload();
+        }
+      })
+      .catch(function (error) {
+        // Handle network or other errors here.
+        console.error("Error:", error);
+        alert("Error sending the email. Please try again later.");
+        window.location.reload();
+      });
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+
   return (
     <>
       {/* Navbar Start */}
@@ -169,39 +214,51 @@ function Contact() {
                 <a href="https://wexorai.com/"> visit Our main page</a>.
               </p>
               <div className="wow fadeIn" data-wow-delay="0.3s">
-                <form>
+                <form onSubmit={handleFormSubmit}>
                   <div className="row g-3">
-                    <div className="col-md-6">
+                    <div className="col-12">
                       <div className="form-floating">
                         <input
                           type="text"
                           className="form-control"
                           id="name"
                           placeholder="Your Name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleInputChange}
+                          required
                         />
                         <label htmlFor="name">Enter Your Name</label>
                       </div>
                     </div>
-                    <div className="col-md-6">
+                    {/* <div className="col-md-6">
                       <div className="form-floating">
                         <input
                           type="email"
                           className="form-control"
                           id="email"
                           placeholder="Your Email"
+                          name="email"
+          value={formData.email}
+          onChange={handleInputChange}
+          required
                         />
                         <label htmlFor="email">Enter Your Email</label>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="col-12">
                       <div className="form-floating">
                         <input
-                          type="text"
+                          type="email"
                           className="form-control"
-                          id="subject"
-                          placeholder="Subject"
+                          id="email"
+                          placeholder="your mail"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          required
                         />
-                        <label htmlFor="subject">Subject</label>
+                        <label htmlFor="subject">Enter Your Email</label>
                       </div>
                     </div>
                     <div className="col-12">
@@ -212,6 +269,10 @@ function Contact() {
                           id="message"
                           style={{ height: 150 }}
                           defaultValue={""}
+                          name="message"
+                          value={formData.message}
+                          onChange={handleInputChange}
+                          required
                         />
                         <label htmlFor="message">Message</label>
                       </div>
