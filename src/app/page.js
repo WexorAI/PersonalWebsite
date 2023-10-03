@@ -1026,13 +1026,13 @@ export default function Home() {
                       <div className="d-flex align-items-center">
                         <img
                           className="img-fluid flex-shrink-0 rounded-circle"
-                          src=""
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDehpIQsG7oX3T0R0pduO_rFDEKwtz0pkCw&usqp=CAU"
                           alt="notfound"
                           style={{ width: 60, height: 60 }}
                         />
                         <div className="ps-3">
                           <h5 className="mb-1">Musthafa Kalodi</h5>
-                          <span></span>
+                          <span> AL OSOOL AUDITING & FINANCIAL CONSULTATIONS</span>
                         </div>
                       </div>
                     </div>
@@ -1044,7 +1044,7 @@ export default function Home() {
                       <div className="d-flex align-items-center">
                         <img
                           className="img-fluid flex-shrink-0 rounded-circle"
-                          src=""
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDehpIQsG7oX3T0R0pduO_rFDEKwtz0pkCw&usqp=CAU"
                           alt="notfound"
                           style={{ width: 60, height: 60 }}
                         />
@@ -1062,13 +1062,13 @@ export default function Home() {
                       <div className="d-flex align-items-center">
                         <img
                           className="img-fluid flex-shrink-0 rounded-circle"
-                          src=""
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDehpIQsG7oX3T0R0pduO_rFDEKwtz0pkCw&usqp=CAU"
                           alt="notfound"
                           style={{ width: 60, height: 60 }}
                         />
                         <div className="ps-3">
                           <h5 className="mb-1">Muhammed Basith</h5>
-                          <span>KPK Traders</span>
+                          <span>KPK Traders pvt.ltd</span>
                         </div>
                       </div>
                     </div>
