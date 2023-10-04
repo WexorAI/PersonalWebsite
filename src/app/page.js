@@ -21,6 +21,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import Chatbot from "./ChatBot/page";
+import NewsletterSubscription from "./components/NewsletterSubscription";
 // import Chatbot from "./ChatBot/page";
 
 export const metadata = {
@@ -211,22 +212,22 @@ export default function Home() {
                   <div className="row g-3">
                     <div className="col-sm-6">
                       <h6 className="mb-3">
-                        <FaCheck color="#1363c6" />
-                        Award Winning
+                        <FaCheck color="#1363c6"  />
+                        <span className="ms-2">Award Winning</span>
                       </h6>
                       <h6 className="mb-0">
                         <FaCheck color="#1363c6" />
-                        Professional Staff
+                        <span className="ms-2">Professional Staff</span>
                       </h6>
                     </div>
                     <div className="col-sm-6">
                       <h6 className="mb-3">
                         <FaCheck color="#1363c6" />
-                        24/7 AI Support
+                        <span className="ms-2"> 24/7 AI Support</span>
                       </h6>
                       <h6 className="mb-0">
                         <FaCheck color="#1363c6" />
-                        Fair Prices
+                        <span className="ms-2">Fair Prices</span>
                       </h6>
                     </div>
                   </div>
@@ -1098,20 +1099,7 @@ export default function Home() {
                   <h1 className="text-white mb-4">
                     Let's subscribe the newsletter
                   </h1>
-                  <div className="position-relative w-100 mt-3 mb-2">
-                    <input
-                      className="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-                      type="text"
-                      placeholder="Enter Your Email"
-                      style={{ height: 48 }}
-                    />
-                    <button
-                      type="button"
-                      className="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
-                    >
-                      <i className="fa fa-paper-plane text-primary fs-4" />
-                    </button>
-                  </div>
+                  <NewsletterSubscription/>
                   <small className="text-white-50">
                     Don’t miss to subscribe to our new feeds, kindly fill the
                     form below.

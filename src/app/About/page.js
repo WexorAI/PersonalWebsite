@@ -15,6 +15,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import Chatbot from "../ChatBot/page";
+import NewsletterSubscription from "../components/NewsletterSubscription";
 
 function About() {
   return (
@@ -188,27 +189,27 @@ function About() {
                 errors, and lead the way in digital transformation with WexorAI.
               </p>
               <div className="row g-3">
-                <div className="col-sm-6">
-                  <h6 className="mb-3">
-                    <FaCheck color="#1363c6" />
-                    Award Winning
-                  </h6>
-                  <h6 className="mb-0">
-                    <FaCheck color="#1363c6" />
-                    Professional Staff
-                  </h6>
-                </div>
-                <div className="col-sm-6">
-                  <h6 className="mb-3">
-                    <FaCheck color="#1363c6" />
-                    24/7 Support
-                  </h6>
-                  <h6 className="mb-0">
-                    <FaCheck color="#1363c6" />
-                    Fair Prices
-                  </h6>
-                </div>
-              </div>
+                    <div className="col-sm-6">
+                      <h6 className="mb-3">
+                        <FaCheck color="#1363c6"  />
+                        <span className="ms-2">Award Winning</span>
+                      </h6>
+                      <h6 className="mb-0">
+                        <FaCheck color="#1363c6" />
+                        <span className="ms-2">Professional Staff</span>
+                      </h6>
+                    </div>
+                    <div className="col-sm-6">
+                      <h6 className="mb-3">
+                        <FaCheck color="#1363c6" />
+                        <span className="ms-2"> 24/7 AI Support</span>
+                      </h6>
+                      <h6 className="mb-0">
+                        <FaCheck color="#1363c6" />
+                        <span className="ms-2">Fair Prices</span>
+                      </h6>
+                    </div>
+                  </div>
               <div className="d-flex align-items-center mt-4">
                 <Link
                   className="btn btn-primary rounded-pill px-4 me-3"
@@ -470,20 +471,7 @@ function About() {
               <h1 className="text-white mb-4">
                 Let's subscribe the newsletter
               </h1>
-              <div className="position-relative w-100 mt-3 mb-2">
-                <input
-                  className="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-                  type="text"
-                  placeholder="Enter Your Email"
-                  style={{ height: 48 }}
-                />
-                <button
-                  type="button"
-                  className="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
-                >
-                  <i className="fa fa-paper-plane text-primary fs-4" />
-                </button>
-              </div>
+              <NewsletterSubscription/>
               <small className="text-white-50">
                 Don’t miss to subscribe to our new feeds, kindly fill the form
                 below.
