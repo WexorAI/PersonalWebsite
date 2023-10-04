@@ -17,6 +17,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import Chatbot from "../ChatBot/page";
+import NewsletterSubscription from "../components/NewsletterSubscription";
 
 function Service() {
   return (
@@ -305,13 +306,13 @@ function Service() {
                       <div className="d-flex align-items-center">
                         <img
                           className="img-fluid flex-shrink-0 rounded-circle"
-                          src=""
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDehpIQsG7oX3T0R0pduO_rFDEKwtz0pkCw&usqp=CAU"
                           alt="notfound"
                           style={{ width: 60, height: 60 }}
                         />
                         <div className="ps-3">
                           <h5 className="mb-1">Musthafa Kalodi</h5>
-                          <span></span>
+                          <span> AL OSOOL AUDITING & FINANCIAL CONSULTATIONS</span>
                         </div>
                       </div>
                     </div>
@@ -323,7 +324,7 @@ function Service() {
                       <div className="d-flex align-items-center">
                         <img
                           className="img-fluid flex-shrink-0 rounded-circle"
-                          src=""
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDehpIQsG7oX3T0R0pduO_rFDEKwtz0pkCw&usqp=CAU"
                           alt="notfound"
                           style={{ width: 60, height: 60 }}
                         />
@@ -341,13 +342,13 @@ function Service() {
                       <div className="d-flex align-items-center">
                         <img
                           className="img-fluid flex-shrink-0 rounded-circle"
-                          src=""
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDehpIQsG7oX3T0R0pduO_rFDEKwtz0pkCw&usqp=CAU"
                           alt="notfound"
                           style={{ width: 60, height: 60 }}
                         />
                         <div className="ps-3">
                           <h5 className="mb-1">Muhammed Basith</h5>
-                          <span>KPK Traders</span>
+                          <span>KPK Traders pvt.ltd</span>
                         </div>
                       </div>
                     </div>
@@ -377,20 +378,7 @@ function Service() {
               <h1 className="text-white mb-4">
                 Let's subscribe the newsletter
               </h1>
-              <div className="position-relative w-100 mt-3 mb-2">
-                <input
-                  className="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-                  type="text"
-                  placeholder="Enter Your Email"
-                  style={{ height: 48 }}
-                />
-                <button
-                  type="button"
-                  className="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
-                >
-                  <i className="fa fa-paper-plane text-primary fs-4" />
-                </button>
-              </div>
+              <NewsletterSubscription/>
               <small className="text-white-50">
                 Don’t miss to subscribe to our new feeds, kindly fill the form
                 below.
