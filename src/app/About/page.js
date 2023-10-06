@@ -14,9 +14,16 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import Chatbot from "../ChatBot/page";
 import NewsletterSubscription from "../components/NewsletterSubscription";
-
+import Chatbot from "../chatBot/page";
+export const metadata = {
+  title: "about page",
+  description:
+    "Your Technological Transformation Partner.. At WexorAI, our passion lies in revolutionizing businesses through advanced technology",
+  alternates: {
+    canonical: `https://wexorai.com/About`,
+  },
+};
 function About() {
   return (
     <>
@@ -499,7 +506,7 @@ function About() {
               <h5 className="text-white mb-4">Get In Touch</h5>
               <p>
               <FaMapMarkerAlt className="me-3" />
-                kozhikkode,Kerala,India
+                3rd, 4th Gate, PT Usha Rd, Vellayil, Kozhikode, Kerala 673032
               </p>
               <p>
                 <FaPhoneAlt className="me-3" />

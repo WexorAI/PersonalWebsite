@@ -21,9 +21,9 @@ const NewsletterSubscription = () => {
         window.location.reload();
       })
       .catch((error) => {
-        setMessage("An error occurred.");
-        console.error(error);
-        alert("An error occurred")
+        setMessage(error);
+        console.log(error);
+        alert("Email already in database. Send new email.")
         window.location.reload();
       });
   };

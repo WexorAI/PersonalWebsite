@@ -3,21 +3,15 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "../../public/lib/animate/animate.min.css";
-import  "../../public/lib/owlcarousel/assets/owl.carousel.min.css";
-import  "../../public/css/bootstrap.min.css";
-import  "../../public/css/style.css";
+import "../../public/lib/owlcarousel/assets/owl.carousel.min.css";
+import "../../public/css/bootstrap.min.css";
+import "../../public/css/style.css";
 // import "../../public/lib/animate/animate.css";
 // import  "../../public/lib/owlcarousel/assets/owl.carousel.css";
 // import  "../../public/lib/owlcarousel/assets/owl.theme.default.css";
 // import  "../../public/lib/owlcarousel/assets/owl.theme.default.min.css";
 // import  "../../public/lib/owlcarousel/assets/owl.theme.green.css";
 // import  "../../public/lib/owlcarousel/assets/owl.theme.green.min.css";
-
-
-
-
-
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,11 +26,6 @@ export const metadata = {
     google: "google-site-verification: google13431dd41fcdcc70.html",
   },
   category: "technology",
-  robots: {
-    index: true,
-    follow: true,
-    nocache: true,
-  },
   keywords: [
     "wexor",
     "wexorAI",
@@ -63,31 +52,37 @@ export default function RootLayout({ children }) {
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
           crossOrigin="anonymous"
         ></link>
-   <>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
-    rel="stylesheet"
-  />
-  {/* Icon Font Stylesheet */}
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-    rel="stylesheet"
-  />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-    rel="stylesheet"
-  />
-  {/* Libraries Stylesheet */}
-  <link href="lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-  {/* Customized Bootstrap Stylesheet */}
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  {/* Template Stylesheet */}
-  <link href="css/style.css" rel="stylesheet" />
-</>
-
+        <>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin=""
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+            rel="stylesheet"
+          />
+          {/* Icon Font Stylesheet */}
+          <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+          />
+          <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+          />
+          {/* Libraries Stylesheet */}
+          <link href="lib/animate/animate.min.css" rel="stylesheet" />
+          <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+          />
+          {/* Customized Bootstrap Stylesheet */}
+          <link href="css/bootstrap.min.css" rel="stylesheet" />
+          {/* Template Stylesheet */}
+          <link href="css/style.css" rel="stylesheet" />
+        </>
       </Head>
       <body>
         {children}

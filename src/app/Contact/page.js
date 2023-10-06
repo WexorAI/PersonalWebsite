@@ -12,10 +12,17 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import Chatbot from "../ChatBot/page";
 import NewsletterSubscription from "../components/NewsletterSubscription";
 import ContactusForm from "../components/ContactusForm";
-
+import Chatbot from "../chatBot/page";
+export const metadata = {
+  title: "Contact page",
+  description:
+    "Ready to take your business to the next level? Contact us today.",
+  alternates: {
+    canonical: `https://wexorai.com/Contact`,
+  },
+};
 function Contact() {
   return (
     <>
@@ -230,7 +237,7 @@ function Contact() {
               <h5 className="text-white mb-4">Get In Touch</h5>
               <p>
               <FaMapMarkerAlt className="me-3" />
-                kozhikkode,Kerala,India
+                3rd, 4th Gate, PT Usha Rd, Vellayil, Kozhikode, Kerala 673032
               </p>
               <p>
                 <FaPhoneAlt className="me-3" />
