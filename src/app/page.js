@@ -20,16 +20,15 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
-import Chatbot from "./ChatBot/page";
-import NewsletterSubscription from "./components/NewsletterSubscription";
 // import Chatbot from "./ChatBot/page";
-
+import NewsletterSubscription from "./components/NewsletterSubscription";
+import Chatbot from "./chatBot/page";
 export const metadata = {
   title: "Home page",
   description:
     "At WexorAI, we are dedicated to creating inventive solutions that harness the power of the latest technologies to transform your concepts into reality. Our team of skilled professionals excels in a variety of services tailored to fulfill your digital requirements.",
   alternates: {
-    canonical: `/`,
+    canonical: `https://wexorai.com`,
   },
 };
 
@@ -1134,7 +1133,7 @@ export default function Home() {
                   <h5 className="text-white mb-4">Get In Touch</h5>
                   <p>
                   <FaMapMarkerAlt className="me-3" />
-                    kozhikkode,Kerala,India
+                    3rd, 4th Gate, PT Usha Rd, Vellayil, Kozhikode, Kerala 673032
                   </p>
                   <p>
                     <FaPhoneAlt className="me-3" />
