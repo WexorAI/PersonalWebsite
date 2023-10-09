@@ -265,13 +265,17 @@ function buildChatbot() {
   const chatbotContainer = document.createElement("div");
   chatbotContainer.classList.add("chatbot");
 
-  // Create the chatbot header
-  const chatbotHeader = document.createElement("header");
-  chatbotHeader.classList.add("m1");
-  chatbotHeader.innerHTML = `
-    <h2>ChatBot</h2>
-    <span class="close-btn material-symbols-outlined"></span>
-  `;
+// Create the chatbot header
+const chatbotHeader = document.createElement("header");
+chatbotHeader.classList.add("m1");
+chatbotHeader.innerHTML = `
+  <div class="header-content">
+    <img src="https://wexorai.com/WexorBlackDots.png" alt="WexorAI Logo" class="logo-image" style="width: 50px; height: 40px; display: inline-block; vertical-align: middle;">
+    <h2 style="display: inline-block; vertical-align: middle; margin-left: 10px;">WexorAI</h2>
+  </div>
+  <span class="close-btn material-symbols-outlined"></span>
+`;
+
 
   // Create the chatbox
   const chatbox = document.createElement("ul");
