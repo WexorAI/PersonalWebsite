@@ -15,7 +15,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import NewsletterSubscription from "../components/NewsletterSubscription";
-import Chatbot from "../chatBot/page";
+// import Chatbot from "../chatBot/page";
 export const metadata = {
   title: "about page",
   description:
@@ -606,7 +606,7 @@ function About() {
           // href=""
           // className="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
           >
-            <Chatbot />
+            {/* <Chatbot /> */}
           </div>
 
     </>

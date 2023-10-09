@@ -86,6 +86,12 @@ export default function RootLayout({ children }) {
       </Head>
       <body>
         {children}
+        <div class="botbdy" style={{ zIndex: "1000000000000" }}>
+          <button class="chatbot-toggler">
+            <span class="material-symbols-outlined">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
         <script
           src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
           integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -120,6 +126,7 @@ export default function RootLayout({ children }) {
 
         {/* <!-- Template Javascript --> */}
         <Script src="js/main.js"></Script>
+        <Script src="js/chatbubble.js"></Script>
       </body>
     </html>
   );
