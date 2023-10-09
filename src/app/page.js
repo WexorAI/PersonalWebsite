@@ -22,7 +22,7 @@ import {
 } from "react-icons/fa";
 // import Chatbot from "./ChatBot/page";
 import NewsletterSubscription from "./components/NewsletterSubscription";
-import Chatbot from "./chatBot/page";
+// import Chatbot from "./chatBot/page";
 export const metadata = {
   title: "Home page",
   description:
@@ -1248,7 +1248,7 @@ export default function Home() {
           // href=""
           // className="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
           >
-            <Chatbot />
+            {/* <Chatbot /> */}
           </div>
         </>
       </div>

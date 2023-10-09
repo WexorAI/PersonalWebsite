@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 import NewsletterSubscription from "../components/NewsletterSubscription";
 import ContactusForm from "../components/ContactusForm";
-import Chatbot from "../chatBot/page";
+// import Chatbot from "../chatBot/page";
 export const metadata = {
   title: "Contact page",
   description:
@@ -337,7 +337,7 @@ function Contact() {
           // href=""
           // className="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
           >
-            <Chatbot />
+            {/* <Chatbot /> */}
           </div>
 
     </>
